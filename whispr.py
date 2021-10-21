@@ -54,6 +54,7 @@ def checkInputs(source_plate, mixing_table, plate_type = '384PP_AQ_BP'):
 
 
 
+
 def generateVolumeTable(mixing_table_df, source_plate_df):
     '''
 
@@ -71,26 +72,33 @@ def generateVolumeTable(mixing_table_df, source_plate_df):
 
     '''
 
-    
+
+
     vol_table = []
     vol_table_df = pd.DataFrame(columns = ['Label'] + list(source_plate_df['Label']))
 
     for row in mixing_table_df.index:
 
-        vol_table_df = vol_table_df.append({'Label': row}, ignore_index = True)    
+        vol_table_df = vol_table_df.append({'Label': str(row)}, ignore_index = True)    
         vol = 0
 
         for column in mixing_table_df.columns:
             conc_to_add = float(mixing_table_df.loc[row][column])
             label_indx = 0
-            conc_of_source = source_plate_df.loc[column]['Concentration'].sort_values(ascending = False)[label_indx]
+            conc_of_source = source_plate_df.loc[column]['Concentration']
+            if type(conc_of_source) != np.float64:
+                conc_of_source = conc_of_source.sort_values(ascending = False)[label_indx]
+                
+            #conc_of_source = source_plate_df[source_plate_df['Label'] == column]['Concentration'].sort_values(ascending = False)[label_indx]
             vol_to_add = myround(10*conc_to_add/conc_of_source)
             while conc_to_add > 0 and vol_to_add == 0:
+                #add error if there is not a dilution available
                 label_indx += 1
                 conc_of_source = source_plate_df.loc[column]['Concentration'].sort_values(ascending = False)[label_indx]
                 vol_to_add = myround(10*conc_to_add/conc_of_source)
 
             label = source_plate_df[source_plate_df['Concentration'] == conc_of_source].loc[column]['Label']
+           # label = source_plate_df[source_plate_df['Concentration'] == conc_of_source]
             vol_table_df.loc[vol_table_df['Label'] == row,label] = vol_to_add
 
             vol+=vol_to_add
@@ -99,7 +107,7 @@ def generateVolumeTable(mixing_table_df, source_plate_df):
             raise NameError('Volume of '+ row+ ' exceeds 2.5ul. Total volume is '+ vol+' Please change volumes and try again.')
         else:
 
-            vol_table_df.loc[vol_table_df['Label'] == row,'Water'] = (2.5 - vol)
+            vol_table_df.loc[vol_table_df['Label'] == row,'Water'] = myround(2.5 - vol)
             vol_table_df.loc[vol_table_df['Label'] == label,column] = vol_to_add
 
 
@@ -131,6 +139,8 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
 
     
 
+    
+
     # check source plate type and set volume range
     if 'LDV' in plate_type:
         vol_range = 9.5
@@ -144,7 +154,6 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
 
 
     # reads plate layout and assigns wells to each reaction (rxn_loc; dict)
-    plate = pd.read_csv(output_layout, index_col = 0, dtype = str) 
     labels = pd.unique(np.concatenate(plate.values))
     rxn_loc = {}
     for l in labels:
@@ -152,7 +161,7 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
             index = plate[plate.isin([l])].stack().index
             rxn_loc[l] = []
             for i in index:
-                rxn_loc[l].append(str(i[0]) + i[1])
+                rxn_loc[l].append(str(i[0]) + str(i[1]))
 
 
 
@@ -184,7 +193,7 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
 
 
     # subtract from volume in source plate file 
-
+ 
     rxn_keys = list(rxn_loc.keys())
     for rxn in rxn_keys:
         if rxn in list(vol_table['Label']): 
@@ -207,8 +216,6 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
                            
                         row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[0],
                             'Destination Plate Name':'Destination[1]', 'Destination Well': well, 'Transfer Volume': transfer_vol*1000}
-                        if component == 'Water':
-                            print(vol_used['Water'])
 
                         vol_used[component] = vol_used[component] + transfer_vol
 
