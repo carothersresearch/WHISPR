@@ -129,7 +129,9 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
 	https://docs.google.com/presentation/d/1VzEFFiyCCfI-mrfSQGjb41TOOcz61sTlfk1WMnb-7BI/edit#slide=id.gf541592c34_0_28
 	'''
 
-        # check source plate type and set volume range
+    
+
+    # check source plate type and set volume range
     if 'LDV' in plate_type:
         vol_range = 9.5
     elif '384PP' in plate_type:
@@ -198,14 +200,15 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
                          ## use first well unless the well is empty, then use second well
 
                         if vol_used[component] + transfer_vol >= vol_range:
-                            #need to check length of source_well and throw error
-                            vol_used[component] = 0
-                            source_well = source_well[1:]
                             if len(source_well) == 0:
                                 raise NameError('Need more volume of ' +component+ ' to complete reaction. Add another well to source plate.')
+                            vol_used[component] = 0
+                            source_plate_df.loc[source_plate_df['Label'] == 'Water','Well'] = source_well[1:]
+                           
                         row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[0],
                             'Destination Plate Name':'Destination[1]', 'Destination Well': well, 'Transfer Volume': transfer_vol*1000}
-
+                        if component == 'Water':
+                            print(vol_used['Water'])
 
                         vol_used[component] = vol_used[component] + transfer_vol
 
@@ -219,12 +222,12 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
 
 
 
-    print('\n')
-    for component in vol_used:
-        if 'LDV' in plate_type:
-            print('Load at least ', np.round(4.5+vol_used[component],2), 'ul and maximum 14 ul of ', component)
-        elif '384PP' in plate_type:
-            print('Load at least ', np.round(20+vol_used[component],2), 'ul and maximum 65 ul of ', component)
+    #print('\n')
+    #for component in vol_used:
+    #    if 'LDV' in plate_type:
+    #        print('Load at least ', np.round(4.5+vol_used[component],2), 'ul and maximum 14 ul of ', component)
+    #    elif '384PP' in plate_type:
+    #        print('Load at least ', np.round(20+vol_used[component],2), 'ul and maximum 65 ul of ', component)
 
 
 
