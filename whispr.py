@@ -35,12 +35,27 @@ def checkInputs(source_plate, mixing_table, plate_type = '384PP_AQ_BP'):
         vol_max = 65
         vol_range = vol_max - vol_min
 
-    if (source_plate['Volume'] > vol_max).any():
+        
+    vol = []
+    for component in list(source_plate['Volume']):
+        if type(component) == str:
+            c = component.split(',')
+            for i in c:
+                vol.append(float(i))
+        else:
+            vol.append(component)
+            
+    if any([v > vol_max for v in vol]):
         raise NameError('Volumes of source plate are above working volume range.')
-    if (source_plate['Volume'] < vol_min).any():
+    if any([v < vol_min for v in vol]):
         raise NameError('Volumes of source plate are below working volume range.')
 
-'''
+
+
+
+
+def generateVolumeTable(mixing_table_df, source_plate_df):
+    '''
 
     Converts concentrations to volumes for reaction mixing table, raises error if volume is above max (2.5ul)
     
@@ -56,52 +71,65 @@ def checkInputs(source_plate, mixing_table, plate_type = '384PP_AQ_BP'):
 
     '''
 
-def generateVolumeTable(mixing_table_df, source_plate_df):
     
     vol_table = []
+    vol_table_df = pd.DataFrame(columns = ['Label'] + list(source_plate_df['Label']))
+
     for row in mixing_table_df.index:
-        rxn_series = [row]
+
+        vol_table_df = vol_table_df.append({'Label': row}, ignore_index = True)    
         vol = 0
+
         for column in mixing_table_df.columns:
-            ## need to fix this - if something is between 0 - .025 it might get rounded to 0 and not get added at all.
-            ## need a way to tell the user this is an issue
-            vol_to_add = myround(10*float(mixing_table_df.loc[row][column])/source_plate_df.loc[column]['Concentration'])
+            conc_to_add = float(mixing_table_df.loc[row][column])
+            label_indx = 0
+            conc_of_source = source_plate_df.loc[column]['Concentration'].sort_values(ascending = False)[label_indx]
+            vol_to_add = myround(10*conc_to_add/conc_of_source)
+            while conc_to_add > 0 and vol_to_add == 0:
+                label_indx += 1
+                conc_of_source = source_plate_df.loc[column]['Concentration'].sort_values(ascending = False)[label_indx]
+                vol_to_add = myround(10*conc_to_add/conc_of_source)
+
+            label = source_plate_df[source_plate_df['Concentration'] == conc_of_source].loc[column]['Label']
+            vol_table_df.loc[vol_table_df['Label'] == row,label] = vol_to_add
+
             vol+=vol_to_add
-            rxn_series.append(vol_to_add)
+
         if vol > 2.5:
             raise NameError('Volume of '+ row+ ' exceeds 2.5ul. Total volume is '+ vol+' Please change volumes and try again.')
         else:
-            rxn_series.append(2.5-vol) #add water to fill
-        vol_table.append(rxn_series)
 
-    vol_table_df = pd.DataFrame(vol_table, columns = ['Label'] + list(mixing_table_df.columns) + ['Water'])
-    
+            vol_table_df.loc[vol_table_df['Label'] == row,'Water'] = (2.5 - vol)
+            vol_table_df.loc[vol_table_df['Label'] == label,column] = vol_to_add
+
+
+
     return vol_table_df
 
-'''
-Writes protocol for use with ECHO plate reader
 
-Parameters:
-----------
- - plate_type: Source plate calibration (str)
- - mixing_table: path to csv file with reaction volumes (str)
- - input_layout: links inputs to source well (dict)
- - output_layout: path to csv with desired plate layout for 96 well plate (str)
- 
- 
-Returns:
---------
- - dataframe of ECHO protocol
-
-
-Reference slides here for more information: 
-https://docs.google.com/presentation/d/1VzEFFiyCCfI-mrfSQGjb41TOOcz61sTlfk1WMnb-7BI/edit#slide=id.gf541592c34_0_28
-'''
 
 def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,source_plate_df):
+	'''
+	Writes protocol for use with ECHO plate reader
+
+	Parameters:
+	----------
+	 - plate_type: Source plate calibration (str)
+	 - mixing_table: path to csv file with reaction volumes (str)
+	 - input_layout: links inputs to source well (dict)
+	 - output_layout: path to csv with desired plate layout for 96 well plate (str)
+	 
+	 
+	Returns:
+	--------
+	 - dataframe of ECHO protocol
 
 
-    # check source plate type and set volume range
+	Reference slides here for more information: 
+	https://docs.google.com/presentation/d/1VzEFFiyCCfI-mrfSQGjb41TOOcz61sTlfk1WMnb-7BI/edit#slide=id.gf541592c34_0_28
+	'''
+
+        # check source plate type and set volume range
     if 'LDV' in plate_type:
         vol_range = 9.5
     elif '384PP' in plate_type:
@@ -153,7 +181,7 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
     ''' 
 
 
-
+    # subtract from volume in source plate file 
 
     rxn_keys = list(rxn_loc.keys())
     for rxn in rxn_keys:
@@ -164,39 +192,22 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
                     transfer_vol = float(vols[component])
                     if transfer_vol > 0:
                     ## separate if there is > 1 well in source plate
-                        source_well = source_plate_df.loc[component]['Well']
-                        if type(source_well) == str:
-                        ## only one source well
-                            if vol_used[component] + transfer_vol < vol_range:
-                                row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well,
-                                    'Destination Plate Name':'Destination[1]', 'Destination Well': well, 'Transfer Volume': transfer_vol*1000}
-                                vol_used[component] = vol_used[component] + transfer_vol
+                        source_well = list(source_plate_df[source_plate_df['Label'] == component]['Well'])
+                        source_well = source_well[0].split(',')
 
-                            else:
+                         ## use first well unless the well is empty, then use second well
+
+                        if vol_used[component] + transfer_vol >= vol_range:
+                            #need to check length of source_well and throw error
+                            vol_used[component] = 0
+                            source_well = source_well[1:]
+                            if len(source_well) == 0:
                                 raise NameError('Need more volume of ' +component+ ' to complete reaction. Add another well to source plate.')
+                        row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[0],
+                            'Destination Plate Name':'Destination[1]', 'Destination Well': well, 'Transfer Volume': transfer_vol*1000}
 
-                        else:
-                        ## more than one source well, will be a panda series
-                        ## convert to list
-                            source_well = list(source_well)
-                            ## use first well unless the well is empty, then use second well
 
-                            if vol_used[component] + transfer_vol < vol_range:
-                                row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[0],
-                                    'Destination Plate Name':'Destination[1]', 'Destination Well': well, 'Transfer Volume': transfer_vol*1000}
-
-                            elif vol_used[component] + transfer_vol >= vol_range:
-                                # do i still need this?
-                                source_well = source_well[1:]
-                                if len(source_well) == 0:
-                                    raise NameError('Need more volume of ' +component+ ' to complete reaction. Add another well to source plate.')
-                                row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[0],
-                                    'Destination Plate Name':'Destination[1]', 'Destination Well': well, 'Transfer Volume': transfer_vol*1000}
-
-                                vol_used[component] = 0
-
-                            vol_used[component] = vol_used[component] + transfer_vol
-
+                        vol_used[component] = vol_used[component] + transfer_vol
 
                         output_df = output_df.append(row, ignore_index = True)
 
