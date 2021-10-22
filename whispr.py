@@ -25,6 +25,8 @@ def checkInputs(source_plate, mixing_table, plate_type = '384PP_AQ_BP'):
     '''
 
     # check source plate type and set volume range
+
+    # TODO: check wells are unique
     if 'LDV' in plate_type:
         vol_min = 4.5
         vol_max = 14
@@ -92,9 +94,14 @@ def generateVolumeTable(mixing_table_df, source_plate_df):
             #conc_of_source = source_plate_df[source_plate_df['Label'] == column]['Concentration'].sort_values(ascending = False)[label_indx]
             vol_to_add = myround(10*conc_to_add/conc_of_source)
             while conc_to_add > 0 and vol_to_add == 0:
-                #add error if there is not a dilution available
-                label_indx += 1
-                conc_of_source = source_plate_df.loc[column]['Concentration'].sort_values(ascending = False)[label_indx]
+                if type(source_plate_df.loc[column]['Concentration']) == np.float64:
+                    raise NameError('Mate you need a more dilute stock of '+column)
+                else:
+                    label_indx += 1
+                    if label_indx >= len(source_plate_df.loc[column]['Concentration']):
+                        raise NameError('Mate you need a more dilute stock of '+column)
+                    else:
+                        conc_of_source = source_plate_df.loc[column]['Concentration'].sort_values(ascending = False)[label_indx]
                 vol_to_add = myround(10*conc_to_add/conc_of_source)
 
             label = source_plate_df[source_plate_df['Concentration'] == conc_of_source].loc[column]['Label']
@@ -104,7 +111,7 @@ def generateVolumeTable(mixing_table_df, source_plate_df):
             vol+=vol_to_add
 
         if vol > 2.5:
-            raise NameError('Volume of '+ row+ ' exceeds 2.5ul. Total volume is '+ vol+' Please change volumes and try again.')
+            raise NameError('Volume of '+ row+ ' exceeds 2.5ul. Total volume is '+ str(vol)+' Please change volumes and try again.')
         else:
 
             vol_table_df.loc[vol_table_df['Label'] == row,'Water'] = myround(2.5 - vol)
@@ -117,125 +124,125 @@ def generateVolumeTable(mixing_table_df, source_plate_df):
 
 
 def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,source_plate_df):
-	'''
-	Writes protocol for use with ECHO plate reader
+        '''
+        Writes protocol for use with ECHO plate reader
 
-	Parameters:
-	----------
-	 - plate_type: Source plate calibration (str)
-	 - mixing_table: path to csv file with reaction volumes (str)
-	 - input_layout: links inputs to source well (dict)
-	 - output_layout: path to csv with desired plate layout for 96 well plate (str)
-	 
-	 
-	Returns:
-	--------
-	 - dataframe of ECHO protocol
+        Parameters:
+        ----------
+        - plate_type: Source plate calibration (str)
+        - mixing_table: path to csv file with reaction volumes (str)
+        - input_layout: links inputs to source well (dict)
+        - output_layout: path to csv with desired plate layout for 96 well plate (str)
+        
+        
+        Returns:
+        --------
+        - dataframe of ECHO protocol
 
 
-	Reference slides here for more information: 
-	https://docs.google.com/presentation/d/1VzEFFiyCCfI-mrfSQGjb41TOOcz61sTlfk1WMnb-7BI/edit#slide=id.gf541592c34_0_28
-	'''
+        Reference slides here for more information: 
+        https://docs.google.com/presentation/d/1VzEFFiyCCfI-mrfSQGjb41TOOcz61sTlfk1WMnb-7BI/edit#slide=id.gf541592c34_0_28
+        '''
 
+        
+
+        
+
+        # check source plate type and set volume range
+        if 'LDV' in plate_type:
+            vol_range = 9.5
+        elif '384PP' in plate_type:
+            vol_range = 45
+
+        # keep track of volume used for each component
+        vol_used = {}
+        for k in list(vol_table.columns[1:]):
+            vol_used[k] = 0
+
+
+        # reads plate layout and assigns wells to each reaction (rxn_loc; dict)
+        labels = pd.unique(np.concatenate(output_layout.values))
+        rxn_loc = {}
+        for l in labels:
+            if type(l) is str:
+                index = output_layout[output_layout.isin([l])].stack().index
+                rxn_loc[l] = []
+                for i in index:
+                    rxn_loc[l].append(str(i[0]) + str(i[1]))
+
+
+
+        # create output dataframe
+        output_df = pd.DataFrame(columns = {'Source Plate Name', 'Source Plate Type', 'Source Well', 
+                                        'Destination Plate Name', 'Destination Well', 'Transfer Volume'})
+
+
+        '''
+        for each reaction in the plate layout:
+            if this reaction label matches one in the mixing table:
+                for each well of the reaction in the plate layout:
+                    for each component in the reaction:
+                        find volume to transfer of component
+                        if any volume is added:
+                            if there is one source well:
+                                if the volume used of this component is less than the volume range:
+                                    append row
+                            if there is more than one source well:
+                                if the volume used of this component is less than the volume range:
+                                    append row
+                                else:
+                                    remove first source well
+                                    append row
+                            update volume used
+                            append output dataframe                    
+
+        ''' 
+
+
+        # subtract from volume in source plate file 
     
+        rxn_keys = list(rxn_loc.keys())
+        for rxn in rxn_keys:
+            if rxn in list(vol_table['Label']): 
+                for well in rxn_loc[rxn]: 
+                    vols = vol_table[vol_table['Label'] == rxn]
+                    for component in vols.columns[1:]: 
+                        transfer_vol = float(vols[component])
+                        if transfer_vol > 0:
+                        ## separate if there is > 1 well in source plate
+                            source_well = list(source_plate_df[source_plate_df['Label'] == component]['Well'])
+                            source_well = source_well[0].split(',')
 
-    
+                            ## use first well unless the well is empty, then use second well
 
-    # check source plate type and set volume range
-    if 'LDV' in plate_type:
-        vol_range = 9.5
-    elif '384PP' in plate_type:
-        vol_range = 45
+                            if vol_used[component] + transfer_vol >= vol_range:
+                                if len(source_well) == 0:
+                                    raise NameError('Need more volume of ' +component+ ' to complete reaction. Add another well to source plate.')
+                                vol_used[component] = 0
+                                source_plate_df.loc[source_plate_df['Label'] == 'Water','Well'] = source_well[1:]
+                            
+                            row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[0],
+                                'Destination Plate Name':'Destination[1]', 'Destination Well': well, 'Transfer Volume': transfer_vol*1000}
 
-    # keep track of volume used for each component
-    vol_used = {}
-    for k in list(vol_table.columns[1:]):
-        vol_used[k] = 0
+                            vol_used[component] = vol_used[component] + transfer_vol
 
-
-    # reads plate layout and assigns wells to each reaction (rxn_loc; dict)
-    labels = pd.unique(np.concatenate(plate.values))
-    rxn_loc = {}
-    for l in labels:
-        if type(l) is str:
-            index = plate[plate.isin([l])].stack().index
-            rxn_loc[l] = []
-            for i in index:
-                rxn_loc[l].append(str(i[0]) + str(i[1]))
-
-
-
-    # create output dataframe
-    output_df = pd.DataFrame(columns = {'Source Plate Name', 'Source Plate Type', 'Source Well', 
-                                     'Destination Plate Name', 'Destination Well', 'Transfer Volume'})
+                            output_df = output_df.append(row, ignore_index = True)
 
 
-    '''
-    for each reaction in the plate layout:
-        if this reaction label matches one in the mixing table:
-            for each well of the reaction in the plate layout:
-                for each component in the reaction:
-                    find volume to transfer of component
-                    if any volume is added:
-                        if there is one source well:
-                            if the volume used of this component is less than the volume range:
-                                append row
-                        if there is more than one source well:
-                            if the volume used of this component is less than the volume range:
-                                append row
-                            else:
-                                remove first source well
-                                append row
-                        update volume used
-                        append output dataframe                    
-
-    ''' 
-
-
-    # subtract from volume in source plate file 
- 
-    rxn_keys = list(rxn_loc.keys())
-    for rxn in rxn_keys:
-        if rxn in list(vol_table['Label']): 
-            for well in rxn_loc[rxn]: 
-                vols = vol_table[vol_table['Label'] == rxn]
-                for component in vols.columns[1:]: 
-                    transfer_vol = float(vols[component])
-                    if transfer_vol > 0:
-                    ## separate if there is > 1 well in source plate
-                        source_well = list(source_plate_df[source_plate_df['Label'] == component]['Well'])
-                        source_well = source_well[0].split(',')
-
-                         ## use first well unless the well is empty, then use second well
-
-                        if vol_used[component] + transfer_vol >= vol_range:
-                            if len(source_well) == 0:
-                                raise NameError('Need more volume of ' +component+ ' to complete reaction. Add another well to source plate.')
-                            vol_used[component] = 0
-                            source_plate_df.loc[source_plate_df['Label'] == 'Water','Well'] = source_well[1:]
-                           
-                        row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[0],
-                            'Destination Plate Name':'Destination[1]', 'Destination Well': well, 'Transfer Volume': transfer_vol*1000}
-
-                        vol_used[component] = vol_used[component] + transfer_vol
-
-                        output_df = output_df.append(row, ignore_index = True)
-
-
-    output_df = output_df[['Source Plate Name', 'Source Plate Type', 'Source Well', 
-                            'Destination Plate Name', 'Destination Well', 'Transfer Volume']]
+        output_df = output_df[['Source Plate Name', 'Source Plate Type', 'Source Well', 
+                                'Destination Plate Name', 'Destination Well', 'Transfer Volume']]
 
 
 
 
 
-    #print('\n')
-    #for component in vol_used:
-    #    if 'LDV' in plate_type:
-    #        print('Load at least ', np.round(4.5+vol_used[component],2), 'ul and maximum 14 ul of ', component)
-    #    elif '384PP' in plate_type:
-    #        print('Load at least ', np.round(20+vol_used[component],2), 'ul and maximum 65 ul of ', component)
+        #print('\n')
+        #for component in vol_used:
+        #    if 'LDV' in plate_type:
+        #        print('Load at least ', np.round(4.5+vol_used[component],2), 'ul and maximum 14 ul of ', component)
+        #    elif '384PP' in plate_type:
+        #        print('Load at least ', np.round(20+vol_used[component],2), 'ul and maximum 65 ul of ', component)
 
 
 
-    return(output_df)
+        return(output_df)
