@@ -5,7 +5,7 @@ import numpy as np
 def myround(x, prec=3, base=.025):
     return round(base * round(float(x)/base),prec)
 
-def checkInputs(source_plate, mixing_table, plate_type = '384PP_AQ_BP'):
+def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
 
     '''
 
@@ -26,7 +26,13 @@ def checkInputs(source_plate, mixing_table, plate_type = '384PP_AQ_BP'):
 
     # check source plate type and set volume range
 
-    # TODO: check wells are unique
+    if not source_plate['Well'].is_unique:
+        raise NameError('Wells in the source plate are not unique!')
+
+    present = [m in source_plate.index for m in mixing_table_df.columns]
+    if not np.all(present):
+        raise NameError('Source plate does not contain some plasmids in the mixing table: '+ str(mixing_table_df.columns[not present]))
+
     if 'LDV' in plate_type:
         vol_min = 4.5
         vol_max = 14

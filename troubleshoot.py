@@ -15,7 +15,7 @@ mixing_table_df = pd.read_csv(mixing_table, index_col = 0, dtype = str).fillna(0
 
 source_plate_type = '384PP_AQ_BP' 
 
-checkInputs(source_plate_df, mixing_table,source_plate_type)
+checkInputs(source_plate_df, mixing_table_df,source_plate_type)
 
 vol_table_df = generateVolumeTable(mixing_table_df, source_plate_df)
 
