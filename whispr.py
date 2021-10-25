@@ -63,10 +63,10 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
 
 
 
-def generateVolumeTable(mixing_table_df, source_plate_df):
+def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_vol = 10):
     '''
 
-    Converts concentrations to volumes for reaction mixing table, raises error if volume is above max (2.5ul)
+    Converts concentrations to volumes for reaction mixing table, raises error if volume is above max (rxn_vol, default = 2.5ul)
     
     Parameters:
     -----------
@@ -98,7 +98,7 @@ def generateVolumeTable(mixing_table_df, source_plate_df):
                 conc_of_source = conc_of_source.sort_values(ascending = False)[label_indx]
                 
             #conc_of_source = source_plate_df[source_plate_df['Label'] == column]['Concentration'].sort_values(ascending = False)[label_indx]
-            vol_to_add = myround(10*conc_to_add/conc_of_source)
+            vol_to_add = myround(total_vol*conc_to_add/conc_of_source)
             while conc_to_add > 0 and vol_to_add == 0:
                 if type(source_plate_df.loc[column]['Concentration']) == np.float64:
                     raise NameError('Mate you need a more dilute stock of '+column)
@@ -108,7 +108,7 @@ def generateVolumeTable(mixing_table_df, source_plate_df):
                         raise NameError('Mate you need a more dilute stock of '+column)
                     else:
                         conc_of_source = source_plate_df.loc[column]['Concentration'].sort_values(ascending = False)[label_indx]
-                vol_to_add = myround(10*conc_to_add/conc_of_source)
+                vol_to_add = myround(total_vol*conc_to_add/conc_of_source)
 
             label = source_plate_df[source_plate_df['Concentration'] == conc_of_source].loc[column]['Label']
            # label = source_plate_df[source_plate_df['Concentration'] == conc_of_source]
@@ -116,11 +116,11 @@ def generateVolumeTable(mixing_table_df, source_plate_df):
 
             vol+=vol_to_add
 
-        if vol > 2.5:
-            raise NameError('Volume of '+ row+ ' exceeds 2.5ul. Total volume is '+ str(vol)+' Please change volumes and try again.')
+        if vol > rxn_vol:
+            raise NameError('Volume of '+ row+ ' exceeds '+str(rxn_vol) + 'ul. Total volume is '+ str(vol)+' Please change volumes and try again.')
         else:
 
-            vol_table_df.loc[vol_table_df['Label'] == row,'Water'] = myround(2.5 - vol)
+            vol_table_df.loc[vol_table_df['Label'] == row,'Water'] = myround(rxn_vol - vol)
             vol_table_df.loc[vol_table_df['Label'] == label,column] = vol_to_add
 
 
