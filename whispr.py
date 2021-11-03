@@ -225,7 +225,7 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
                                 if len(source_well) == 0:
                                     raise NameError('Need more volume of ' +component+ ' to complete reaction. Add another well to source plate.')
                                 vol_used[component] = 0
-                                source_plate_df['Well','Water'] = ','.join(source_well[1:])
+                                source_plate_df['Well',component] = ','.join(source_well[1:])
                             
                             row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[0],
                                 'Destination Plate Name':'Destination[1]', 'Destination Well': well, 'Transfer Volume': transfer_vol*1000}
