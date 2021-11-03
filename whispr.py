@@ -162,7 +162,11 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
 
         # keep track of volume used for each component
         vol_used = {}
-        for k in list(vol_table.columns[1:]):
+        well_list = ''
+        for k in list(source_plate_df['Well']):
+            well_list += k + ','
+        well_list = well_list.split(',')
+        for k in well_list:
             vol_used[k] = 0
 
 
@@ -221,16 +225,18 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
 
                             ## use first well unless the well is empty, then use second well
 
-                            if vol_used[component] + transfer_vol >= vol_range:
+                            if vol_used[source_well[0]] + transfer_vol >= vol_range:
+                                #vol_used[component] = 0
+                                source_plate_df['Well',component] = ','.join(source_well[1:])
+                                
                                 if len(source_well) == 0:
                                     raise NameError('Need more volume of ' +component+ ' to complete reaction. Add another well to source plate.')
-                                vol_used[component] = 0
-                                source_plate_df['Well',component] = ','.join(source_well[1:])
+
                             
                             row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[0],
                                 'Destination Plate Name':'Destination[1]', 'Destination Well': well, 'Transfer Volume': transfer_vol*1000}
 
-                            vol_used[component] = vol_used[component] + transfer_vol
+                            vol_used[source_well[0]] = vol_used[source_well[0]] + transfer_vol
 
                             output_df = output_df.append(row, ignore_index = True)
 
@@ -239,16 +245,9 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
                                 'Destination Plate Name', 'Destination Well', 'Transfer Volume']]
 
 
-
-
-
-        #print('\n')
-        #for component in vol_used:
-        #    if 'LDV' in plate_type:
-        #        print('Load at least ', np.round(4.5+vol_used[component],2), 'ul and maximum 14 ul of ', component)
-        #    elif '384PP' in plate_type:
-        #        print('Load at least ', np.round(20+vol_used[component],2), 'ul and maximum 65 ul of ', component)
-
-
-
+        for v in vol_used:
+            vol_used[v] = myround(vol_used[v])
+        vol_used = {well:vol for well,vol in vol_used.items() if vol!=0}
+        print('Volumes used from each well for this protocol:')
+        print(vol_used)
         return(output_df)
