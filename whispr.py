@@ -117,6 +117,7 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
             vol+=vol_to_add
 
         if vol > rxn_vol:
+            print(vol_table_df)
             raise NameError('Volume of '+ row+ ' exceeds '+str(rxn_vol) + 'ul. Total volume is '+ str(vol)+' Please change volumes and try again.')
         else:
 
@@ -164,7 +165,8 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
         vol_used = {}
         well_list = ''
         for k in list(source_plate_df['Well']):
-            well_list += k + ','
+            if type(k) is str:
+                well_list += k + ','
         well_list = well_list.split(',')
         for k in well_list:
             vol_used[k] = 0
