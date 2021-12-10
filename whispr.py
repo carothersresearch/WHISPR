@@ -55,7 +55,7 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
             
     if any([v > vol_max for v in vol]):
         raise NameError('Volumes of source plate are above working volume range.')
-    if any([v < vol_min for v in vol]):
+    if any([v <= vol_min for v in vol]):
         raise NameError('Volumes of source plate are below working volume range.')
 
 
@@ -157,16 +157,21 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
 
         # check source plate type and set volume range
         if 'LDV' in plate_type:
-            vol_range = 9.5
+            vol_min = 4.5
+            vol_max = 14
+            vol_range = vol_max - vol_min
+
         elif '384PP' in plate_type:
-            vol_range = 45
+            vol_min = 20
+            vol_max = 65
+            vol_range = vol_max - vol_min
 
         # keep track of volume used for each component
         vol_used = {}
         well_list = ''
         for k in list(source_plate_df['Well']):
             if type(k) is str:
-                well_list += k + ','
+                well_list += k.replace(' ','') + ','
         well_list = well_list.split(',')
         for k in well_list:
             vol_used[k] = 0
@@ -212,14 +217,17 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
 
 
         # subtract from volume in source plate file 
-    
+        well_vols = {}
+        for component in list(source_plate_df['Label']):
+            well_vols[component] = str(list(source_plate_df[source_plate_df['Label'] == component]['Volume'])[0]).split(',')
+
         rxn_keys = list(rxn_loc.keys())
         for rxn in rxn_keys:
             if rxn in list(vol_table['Label']): 
                 for well in rxn_loc[rxn]: 
                     vols = vol_table[vol_table['Label'] == rxn]
                     for component in vols.columns[1:]: 
-                        transfer_vol = float(vols[component])
+                        transfer_vol = float(vols[component])      
                         if transfer_vol > 0:
                         ## separate if there is > 1 well in source plate
                             source_well = list(source_plate_df[source_plate_df['Label'] == component]['Well'])
@@ -227,10 +235,15 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
 
                             ## use first well unless the well is empty, then use second well
 
-                            if vol_used[source_well[0]] + transfer_vol >= vol_range:
-                                #vol_used[component] = 0
-                                source_plate_df['Well',component] = ','.join(source_well[1:])
-                                
+                            # check if volume used leaves volume below minimum
+                            if vol_used[source_well[0]] + transfer_vol >= float(well_vols[component][0]) - vol_min:
+                                source_plate_df['Well'][component] = ','.join(source_well[1:]).replace(' ','')
+                                well_vols[component] = well_vols[component][1:]
+                                if len(source_well) == 0:
+                                    raise NameError('Need more volume of ' +component+ ' to complete reaction. Add another well to source plate.')
+
+
+
                                 if len(source_well) == 0:
                                     raise NameError('Need more volume of ' +component+ ' to complete reaction. Add another well to source plate.')
 
