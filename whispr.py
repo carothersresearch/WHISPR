@@ -39,7 +39,7 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
         vol_range = vol_max - vol_min
 
     elif '384PP' in plate_type:
-        vol_min = 20
+        vol_min = 19
         vol_max = 65
         vol_range = vol_max - vol_min
 
@@ -55,7 +55,7 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
             
     if any([v > vol_max for v in vol]):
         raise NameError('Volumes of source plate are above working volume range.')
-    if any([v <= vol_min for v in vol]):
+    if any([v < vol_min for v in vol]):
         raise NameError('Volumes of source plate are below working volume range.')
 
 
@@ -237,17 +237,13 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
 
                             # check if volume used leaves volume below minimum
                             if vol_used[source_well[0]] + transfer_vol >= float(well_vols[component][0]) - vol_min:
+                                print(source_well)
+                                if len(source_well) <= 1:
+                                    raise NameError('Need more volume of ' +component+ ' to complete reaction ' + rxn + '. Add another well to source plate.')
+
                                 source_plate_df['Well'][component] = ','.join(source_well[1:]).replace(' ','')
                                 well_vols[component] = well_vols[component][1:]
-                                if len(source_well) == 0:
-                                    raise NameError('Need more volume of ' +component+ ' to complete reaction. Add another well to source plate.')
-
-
-
-                                if len(source_well) == 0:
-                                    raise NameError('Need more volume of ' +component+ ' to complete reaction. Add another well to source plate.')
-
-                            
+                                
                             row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[0],
                                 'Destination Plate Name':'Destination[1]', 'Destination Well': well, 'Transfer Volume': transfer_vol*1000}
 
