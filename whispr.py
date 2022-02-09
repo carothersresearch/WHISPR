@@ -130,7 +130,7 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
 
 
 
-def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,source_plate_df):
+def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_source_vol = None):
         '''
         Writes protocol for use with ECHO plate reader
 
@@ -261,4 +261,20 @@ def writeProtocol(plate_type, vol_table, source_plate_layout, output_layout,sour
         vol_used = {well:vol for well,vol in vol_used.items() if vol!=0}
         print('Volumes used from each well for this protocol:')
         print(vol_used)
-        return(output_df)
+
+        if update_source_vol:
+            ignore_water = True # at least for now. might get to it later
+            if ignore_water:
+                for k,v in vol_used.items():
+                    if 'A' not in k:
+                        row = 1 + list(source_plate_df['Well'][1:].values).index(k)
+                        current_vol = source_plate_df.iloc[row,3]
+                        new_vol = current_vol - v
+                        source_plate_df.iloc[row,4] = new_vol
+
+            col_names = list(source_plate_df.columns)
+            col_names[4] = 'New Volume'
+            source_plate_df.columns = col_names
+            source_plate_df.to_excel(update_source_vol)
+
+        return output_df
