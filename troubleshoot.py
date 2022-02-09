@@ -23,9 +23,9 @@ source_plate_type = '384PP_AQ_BP'
 
 checkInputs(source_plate_df, mixing_table_df,source_plate_type)
 
-vol_table_df = generateVolumeTable(mixing_table_df, source_plate_df)
+vol_table_df = generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol=3, total_vol=12)
 
 #specify rxn_vol (default = 2.5) and total_vol (default = 10) if you'd like to change the volume of each individual replicate or the total reaction volume
-filename = '220202_split_scRNAs_EP.csv'
+filename = '220209_split_scRNAs_EP.csv'
 output_df = writeProtocol(source_plate_type, vol_table_df, output_plate,source_plate_df, update_source_vol = source_plate)
 output_df.to_csv('protocols/'+filename,index = False)
