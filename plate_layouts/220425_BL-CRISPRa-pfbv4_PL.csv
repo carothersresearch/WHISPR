@@ -1,0 +1,9 @@
+,1,2,3,4,5,6,7,8,9,10,11,12
+A,blank,blank,,pH_2,pH_5,pH_5,pH_5,pH_5,pL_1,pL_1,pL_1,pL_1
+B,blank,blank,pH_1,pH_2,pH_6,pH_6,pH_6,pH_6,pL_2,pL_2,pL_2,pL_2
+C,TJ1,pH_1,pH_1,pH_2,,,,pL_3,,pL_3,pL_3,pL_3
+D,TJ1,,pH_1,pH_2,,,,,pL_4,pL_4,pL_4,pL_4
+E,TJ1,,pH_3,pH_4,,,,,pL_5,pL_5,pL_5,pL_5
+F,TJ1,,pH_3,pH_4,,,,,pL_6,pL_6,pL_6,pL_6
+G,,,pH_3,pH_4,,,,,,,,
+H,,,pH_3,pH_4,,,,,,,,
