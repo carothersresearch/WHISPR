@@ -1,0 +1,9 @@
+,1,2,3,4,5,6,7,8,9,10,11,12
+A,,,,,,,,,,,,
+B,,,,,,,,,,,,
+C,,,,,,,,,,,,
+D,,,,,,,,,,,,
+E,,,,,,,,,,,,
+F,1p_A_pos,1p_A_neg,1p_B_pos,1p_B_neg,,,,,,,,
+G,2p_eq_A_pos,2p_eq_A_neg,2p_half_A_pos,2p_half_A_neg,2p_eq_B_pos,2p_eq_B_neg,2p_half_B_pos,2p_half_B_neg,,,,
+H,3p_eq_A_pos,3p_eq_A_neg,3p_third_A_pos,3p_third_A_neg,,3p_eq_B_neg,3p_third_B_pos,3p_third_B_neg,,,,
