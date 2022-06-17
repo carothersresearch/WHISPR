@@ -63,7 +63,7 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
 
 
 
-def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_vol = 10):
+def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_vol = 10, min_well_vol = 21):
     '''
 
     Converts concentrations to volumes for reaction mixing table, raises error if volume is above max (rxn_vol, default = 2.5ul)
@@ -78,12 +78,12 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
     Dataframe with volumes to add of each component for each reaction
 
 
-    '''
-
+    '''           
+    running_source_plate = source_plate_df.copy()
 
 
     vol_table = []
-    vol_table_df = pd.DataFrame(columns = ['Label'] + list(source_plate_df['Label']))
+    vol_table_df = pd.DataFrame(columns = ['Label'] + list(running_source_plate['Label']))
 
     for row in mixing_table_df.index:
 
@@ -93,27 +93,35 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
         for column in mixing_table_df.columns:
             conc_to_add = float(mixing_table_df.loc[row][column])
             label_indx = 0
-            conc_of_source = source_plate_df.loc[column]['Concentration']
+            conc_of_source = running_source_plate.loc[column]['Concentration']
             if type(conc_of_source) != np.float64:
-                conc_of_source = conc_of_source.sort_values(ascending = False)[label_indx]
-                
+                while running_source_plate.loc[column].sort_values(ascending = False, by = 'Concentration')['Volume'][label_indx] <= min_well_vol:
+                    label_indx += 1
+                else: 
+                    conc_of_source = conc_of_source.sort_values(ascending = False)[label_indx]
+                    
             #conc_of_source = source_plate_df[source_plate_df['Label'] == column]['Concentration'].sort_values(ascending = False)[label_indx]
             vol_to_add = myround(total_vol*conc_to_add/conc_of_source)
+            # this may round to zero, so need to check for more dilute wells 
             while conc_to_add > 0 and vol_to_add == 0:
-                if type(source_plate_df.loc[column]['Concentration']) == np.float64:
+                if type(running_source_plate.loc[column]['Concentration']) == np.float64:
                     raise NameError('Mate you need a more dilute stock of '+column)
                 else:
                     label_indx += 1
-                    if label_indx >= len(source_plate_df.loc[column]['Concentration']):
+                    if label_indx >= len(running_source_plate.loc[column]['Concentration']):
                         raise NameError('Mate you need a more dilute stock of '+column)
                     else:
-                        conc_of_source = source_plate_df.loc[column]['Concentration'].sort_values(ascending = False)[label_indx]
+                        conc_of_source = running_source_plate.loc[column]['Concentration'].sort_values(ascending = False)[label_indx]
                 vol_to_add = myround(total_vol*conc_to_add/conc_of_source)
 
-            label = source_plate_df[source_plate_df['Concentration'] == conc_of_source].loc[column]['Label']
+            label = running_source_plate[running_source_plate['Concentration'] == conc_of_source].loc[column]['Label']
            # label = source_plate_df[source_plate_df['Concentration'] == conc_of_source]
             vol_table_df.loc[vol_table_df['Label'] == row,label] = vol_to_add
-
+            
+            running_source_plate=running_source_plate.reset_index(level=0).set_index('Label')
+            running_source_plate.loc[label, 'Volume'] = running_source_plate.loc[label, 'Volume'] - vol_to_add
+            running_source_plate=running_source_plate.reset_index(level=0).set_index('Plasmid')
+            
             vol+=vol_to_add
 
         if round(vol,3) > rxn_vol:
@@ -123,10 +131,12 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
 
             vol_table_df.loc[vol_table_df['Label'] == row,'Water'] = myround(rxn_vol - vol)
             vol_table_df.loc[vol_table_df['Label'] == label,column] = vol_to_add
+            
+            running_source_plate=running_source_plate.reset_index(level=0).set_index('Label')
+            running_source_plate.loc[label, 'Volume'] = running_source_plate.loc[label, 'Volume'] - vol_to_add
+            running_source_plate=running_source_plate.reset_index(level=0).set_index('Plasmid')
 
-
-
-    return vol_table_df
+    return vol_table_df,running_source_plate
 
 
 
