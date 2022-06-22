@@ -1,0 +1,9 @@
+,1,2,3,4,5,6,7,8,9,10,11,12
+A,,,,,,,,,,,,
+B,,,,,,,LH_0,lowLH_0,c_1,,,
+C,,,,,,,LH_1,lowLH_1,c_0,,,
+D,,,,,,,LH_2,highLH_0,blank,,,
+E,,,,,,,LH_3,highLH_1,,,,
+F,1p_A_pos,1p_A_neg,CRISPRa,leak,,,,,,,,
+G,2p_eq_A_pos,2p_eq_A_neg,2p_half_A_pos,2p_half_A_neg,3p_eq_A_pos,3p_eq_A_neg,3p_third_A_pos,3p_third_A_neg,4p_eq_A_pos,4p_eq_A_neg,4p_fourth_A_pos,4p_fourth_A_neg
+H,,,,,,,,,,,,
