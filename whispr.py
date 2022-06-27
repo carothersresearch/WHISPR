@@ -125,7 +125,7 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
             vol+=vol_to_add
 
         if round(vol,3) > rxn_vol:
-            print(vol_table_df)
+            print(vol_table_df.loc[vol_table_df['Label'] == row].to_markdown())
             raise NameError('Volume of '+ row+ ' exceeds '+str(rxn_vol) + 'ul. Total volume is '+ str(round(vol,3))+' Please change volumes and try again.')
         else:
 
