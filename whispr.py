@@ -31,7 +31,7 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
 
     present = [m in source_plate.index for m in mixing_table_df.columns]
     if not np.all(present):
-        raise NameError('Source plate does not contain some plasmids in the mixing table: '+ str(mixing_table_df.columns[not present]))
+        raise NameError('Source plate does not contain some items in the mixing table: '+ str(mixing_table_df.columns[not present]))
 
     if 'LDV' in plate_type:
         vol_min = 4.5
@@ -63,7 +63,7 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
 
 
 
-def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_vol = 10, min_well_vol = 18):
+def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_vol = 10, min_well_vol = 18, fill_with = 'Water'):
     '''
 
     Converts concentrations to volumes for reaction mixing table, raises error if volume is above max (rxn_vol, default = 2.5ul)
@@ -119,9 +119,13 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
             vol_table_df.loc[vol_table_df['Label'] == row,label] = vol_to_add
             
             running_source_plate=running_source_plate.reset_index(level=0).set_index('Label')
-            running_source_plate.loc[label, 'Volume'] = running_source_plate.loc[label, 'Volume'] - vol_to_add
-            running_source_plate=running_source_plate.reset_index(level=0).set_index('Plasmid')
-            
+            if type(running_source_plate.loc[label, 'Volume']) == str: 
+                current_vols = np.array(list(map(float,running_source_plate.loc[label, 'Volume'].split(','))))
+                current_vols[np.where(current_vols>min_well_vol)[0][0]] = current_vols[np.where(current_vols>min_well_vol)[0][0]] - vol_to_add
+                running_source_plate.loc[label, 'Volume'] = ','.join(list(map(str,current_vols)))
+            else:
+                running_source_plate.loc[label, 'Volume'] = running_source_plate.loc[label, 'Volume'] - vol_to_add
+            running_source_plate=running_source_plate.reset_index(level=0).set_index('Item') 
             vol+=vol_to_add
 
         if round(vol,3) > rxn_vol:
@@ -129,12 +133,16 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
             raise NameError('Volume of '+ row+ ' exceeds '+str(rxn_vol) + 'ul. Total volume is '+ str(round(vol,3))+' Please change volumes and try again.')
         else:
 
-            vol_table_df.loc[vol_table_df['Label'] == row,'Water'] = myround(rxn_vol - vol)
-            vol_table_df.loc[vol_table_df['Label'] == label,column] = vol_to_add
+            vol_table_df.loc[vol_table_df['Label'] == row,fill_with] = myround(rxn_vol - vol)
             
             running_source_plate=running_source_plate.reset_index(level=0).set_index('Label')
-            running_source_plate.loc[label, 'Volume'] = running_source_plate.loc[label, 'Volume'] - vol_to_add
-            running_source_plate=running_source_plate.reset_index(level=0).set_index('Plasmid')
+            if type(running_source_plate.loc[fill_with, 'Volume']) == str: 
+                current_vols = np.array(list(map(float,running_source_plate.loc[fill_with, 'Volume'].split(','))))
+                current_vols[np.where(current_vols>min_well_vol)[0][0]] = current_vols[np.where(current_vols>min_well_vol)[0][0]] - myround(rxn_vol - vol)
+                running_source_plate.loc[fill_with, 'Volume'] = ','.join(list(map(str,current_vols)))
+            else:
+                running_source_plate.loc[fill_with, 'Volume'] = running_source_plate.loc[fill_with, 'Volume'] - myround(rxn_vol - vol)
+            running_source_plate=running_source_plate.reset_index(level=0).set_index('Item') 
 
     return vol_table_df,running_source_plate
 
@@ -247,8 +255,8 @@ def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_s
 
                             # check if volume used leaves volume below minimum
                             if vol_used[source_well[0]] + transfer_vol >= float(well_vols[component][0]) - vol_min:
-                                print(vol_used[source_well[0]], transfer_vol)
-                                print(source_well)
+                                # print(vol_used[source_well[0]], transfer_vol)
+                                # print(source_well)
                                 if len(source_well) <= 1:
                                     raise NameError('Need more volume of ' +component+ ' to complete reaction ' + rxn + '. Add another well to source plate.')
 
