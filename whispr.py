@@ -179,7 +179,7 @@ def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_s
             vol_range = vol_max - vol_min
 
         elif '384PP' in plate_type:
-            vol_min = 16 # 20
+            vol_min = 14 # 20
             vol_max = 65
             vol_range = vol_max - vol_min
 
@@ -262,7 +262,8 @@ def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_s
                             if not type(source_well[0]) == list: source_well = source_well[0].split(',')
 
                             ## use first well unless the well is empty, then use second well
-
+                            index = 0
+                            
                             # check if volume used leaves volume below minimum
                             if vol_used[source_well[0]] + transfer_vol >= float(well_vols[component][0]) - vol_min:
                                 # print(vol_used[source_well[0]], transfer_vol)
@@ -272,11 +273,12 @@ def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_s
 
                                 running_source_plate['Well'][component] = ','.join(source_well[1:]).replace(' ','')
                                 well_vols[component] = well_vols[component][1:]
-                                
-                            row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[0],
+                                index = 1
+ 
+                            row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[index],
                                 'Destination Plate Name':'Destination[1]', 'Destination Well': well, 'Transfer Volume': transfer_vol*1000}
 
-                            vol_used[source_well[0]] = vol_used[source_well[0]] + transfer_vol
+                            vol_used[source_well[index]] = vol_used[source_well[index]] + transfer_vol
 
                             output_df = output_df.append(row, ignore_index = True)
 
