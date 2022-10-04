@@ -23,9 +23,9 @@ source_plate_type = '384PP_AQ_BP'
 
 checkInputs(source_plate_df, mixing_table_df,source_plate_type)
 
-vol_table_df,updated_source_plate = generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 22.5, total_vol = 25, fill_with='HEPES')
+vol_table_df = generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 22.5, total_vol = 25, fill_with='HEPES')
 
 #specify rxn_vol (default = 2.5) and total_vol (default = 10) if you'd like to change the volume of each individual replicate or the total reaction volume
 filename = 'buffer_dummy_EP.csv'
-output_df = writeProtocol(source_plate_type, vol_table_df, output_plate,source_plate_df)
+output_df = writeProtocol(source_plate_type, vol_table_df, output_plate,source_plate_df, update_source_vol=source_plate)
 output_df.to_csv('protocols/'+filename,index = False)

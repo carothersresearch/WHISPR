@@ -79,7 +79,7 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
 
 
     '''           
-    running_source_plate = source_plate_df.copy()
+    running_source_plate = source_plate_df.copy(deep = True)
 
 
     vol_table = []
@@ -144,7 +144,7 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
                 running_source_plate.loc[fill_with, 'Volume'] = running_source_plate.loc[fill_with, 'Volume'] - myround(rxn_vol - vol)
             running_source_plate=running_source_plate.reset_index(level=0).set_index('Item') 
 
-    return vol_table_df,running_source_plate
+    return vol_table_df
 
 
 
@@ -169,9 +169,8 @@ def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_s
         https://docs.google.com/presentation/d/1VzEFFiyCCfI-mrfSQGjb41TOOcz61sTlfk1WMnb-7BI/edit#slide=id.gf541592c34_0_28
         '''
 
-        
+        running_source_plate = source_plate_df.copy(deep = True)
 
-        
 
         # check source plate type and set volume range
         if 'LDV' in plate_type:
@@ -187,12 +186,23 @@ def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_s
         # keep track of volume used for each component
         vol_used = {}
         well_list = ''
-        for k in list(source_plate_df['Well']):
+        for k in list(running_source_plate['Well']):
             if type(k) is str:
                 well_list += k.replace(' ','') + ','
-        well_list = well_list.split(',')
+        well_list = well_list[:-1].split(',')
+
+        vol_list = ''
+        for k in list(running_source_plate['Volume']):
+            if (type(k) is int) or (type(k) is float):
+                vol_list += str(k) + ','
+            if type(k) is str:
+                vol_list += k.replace(' ','') + ','
+        vol_list = vol_list[:-1].split(',')
+
         for k in well_list:
             vol_used[k] = 0
+
+        vol_left = dict(zip(well_list, map(float,vol_list)))
 
 
         # reads plate layout and assigns wells to each reaction (rxn_loc; dict)
@@ -236,8 +246,8 @@ def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_s
 
         # subtract from volume in source plate file 
         well_vols = {}
-        for component in list(source_plate_df['Label']):
-            well_vols[component] = str(list(source_plate_df[source_plate_df['Label'] == component]['Volume'])[0]).split(',')
+        for component in list(running_source_plate['Label']):
+            well_vols[component] = str(list(running_source_plate[running_source_plate['Label'] == component]['Volume'])[0]).split(',')
 
         rxn_keys = list(rxn_loc.keys())
         for rxn in rxn_keys:
@@ -248,7 +258,7 @@ def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_s
                         transfer_vol = float(vols[component])      
                         if transfer_vol > 0:
                         ## separate if there is > 1 well in source plate
-                            source_well = list(source_plate_df[source_plate_df['Label'] == component]['Well'])
+                            source_well = list(running_source_plate[running_source_plate['Label'] == component]['Well'])
                             if not type(source_well[0]) == list: source_well = source_well[0].split(',')
 
                             ## use first well unless the well is empty, then use second well
@@ -260,7 +270,7 @@ def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_s
                                 if len(source_well) <= 1:
                                     raise NameError('Need more volume of ' +component+ ' to complete reaction ' + rxn + '. Add another well to source plate.')
 
-                                source_plate_df['Well'][component] = ','.join(source_well[1:]).replace(' ','')
+                                running_source_plate['Well'][component] = ','.join(source_well[1:]).replace(' ','')
                                 well_vols[component] = well_vols[component][1:]
                                 
                             row = {'Source Plate Name':'Source[1]', 'Source Plate Type': plate_type, 'Source Well': source_well[0],
@@ -277,23 +287,19 @@ def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_s
 
         for v in vol_used:
             vol_used[v] = myround(vol_used[v])
+            vol_left[v] -= vol_used[v]
+
         vol_used = {well:vol for well,vol in vol_used.items() if vol!=0}
         print('Volumes used from each well for this protocol:')
         print(vol_used)
 
-        if update_source_vol:
-            ignore_water = True # at least for now. might get to it later
-            if ignore_water:
-                for k,v in vol_used.items():
-                    if 'A' not in k:
-                        row = 1 + list(source_plate_df['Well'][1:].values).index(k)
-                        current_vol = source_plate_df.iloc[row,3]
-                        new_vol = current_vol - v
-                        source_plate_df.iloc[row,4] = new_vol
+        new_vol_list = ['']*len(source_plate_df)
+        for k,v in vol_left.items():
+            row = source_plate_df['Well'].str.contains(k).argmax()
+            new_vol_list[row] = new_vol_list[row] + str(v) + ','
 
-            col_names = list(source_plate_df.columns)
-            col_names[4] = 'New Volume'
-            source_plate_df.columns = col_names
+        source_plate_df['New Volume'] = new_vol_list
+        if update_source_vol:
             source_plate_df.to_excel(update_source_vol)
 
         return output_df
