@@ -41,7 +41,7 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
                 vol_max = 14
 
             elif '384PP' in spt:
-                vol_min = 17
+                vol_min = 20
                 vol_max = 65
 
             elif '6RES' in spt:
@@ -226,7 +226,7 @@ def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_s
                 vol_min = 4.5
 
             elif '384PP' in plate_type:
-                vol_min = 17 # 20
+                vol_min = 20 # 20
 
             elif '6RES' in plate_type:
                 vol_min = 250
