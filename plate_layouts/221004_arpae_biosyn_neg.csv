@@ -1,0 +1,9 @@
+,1,2,3,4,5,6,7,8,9,10,11,12
+A,pyr_0,pyr_0,pyr_0,coa_0,coa_0,coa_0,bicarb_0,bicarb_0,bicarb_0,,,std_0
+B,pyr_1,pyr_1,pyr_1,coa_1,coa_1,coa_1,bicarb_1,bicarb_1,bicarb_1,,,std_1
+C,pyr_2,pyr_2,pyr_2,coa_2,coa_2,coa_2,bicarb_2,bicarb_2,bicarb_2,,,std_2
+D,pyr_3,pyr_3,pyr_3,nadh_0,nadh_0,nadh_0,bicarb_3,bicarb_3,bicarb_3,,,std_3
+E,pyr_4,pyr_4,pyr_4,nadh_1,nadh_1,nadh_1,,,,,,std_4
+F,atp_0,atp_0,atp_0,nadh_2,nadh_2,nadh_2,,,,,,
+G,atp_1,atp_1,atp_1,,,,,,,,,
+H,atp_2,atp_2,atp_2,,,,,,,,,

@@ -1,0 +1,9 @@
+,1,2,3,4,5,6,7,8,9,10,11,12
+A,pyc_pyr_0,pyc_pyr_0,pyc_pyr_0,pyc_coa_0,pyc_coa_0,pyc_coa_0,pyc_bicarb_0,pyc_bicarb_0,pyc_bicarb_0,,new_GFP_0,old_GFP_0
+B,pyc_pyr_1,pyc_pyr_1,pyc_pyr_1,pyc_coa_1,pyc_coa_1,pyc_coa_1,pyc_bicarb_1,pyc_bicarb_1,pyc_bicarb_1,,new_GFP_1,old_GFP_1
+C,pyc_pyr_2,pyc_pyr_2,pyc_pyr_2,pyc_coa_2,pyc_coa_2,pyc_coa_2,pyc_bicarb_2,pyc_bicarb_2,pyc_bicarb_2,,new_GFP_2,old_GFP_2
+D,pyc_pyr_3,pyc_pyr_3,pyc_pyr_3,pyc_nadh_0,pyc_nadh_0,pyc_nadh_0,pyc_bicarb_3,pyc_bicarb_3,pyc_bicarb_3,,new_GFP_3,old_GFP_3
+E,pyc_pyr_4,pyc_pyr_4,pyc_pyr_4,pyc_nadh_1,pyc_nadh_1,pyc_nadh_1,,,,,new_GFP_4,old_GFP_4
+F,pyc_atp_0,pyc_atp_0,pyc_atp_0,pyc_nadh_2,pyc_nadh_2,pyc_nadh_2,,,,,,
+G,pyc_atp_1,pyc_atp_1,pyc_atp_1,,,,,,,,,
+H,pyc_atp_2,pyc_atp_2,pyc_atp_2,,,,,,,,,
