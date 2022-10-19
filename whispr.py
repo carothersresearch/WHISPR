@@ -70,7 +70,7 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
                 sp.index = sp['Label']
                 sp.index.name = 'Item'
 
-def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_vol = 10, min_well_vol = 18, fill_with = 'Water'):
+def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_vol = 10, min_well_vol = 18, fill_with = 'Water', multiRpW = False):
     '''
 
     Converts concentrations to volumes for reaction mixing table, raises error if volume is above max (rxn_vol, default = 2.5ul)
@@ -151,7 +151,15 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
                     running_source_plate.loc[fill_with, 'Volume'] = ','.join(list(map(str,current_vols)))
                 else:
                     running_source_plate.loc[fill_with, 'Volume'] = running_source_plate.loc[fill_with, 'Volume'] - myround(rxn_vol - vol)
-                running_source_plate=running_source_plate.reset_index(level=0).set_index('Item') 
+                running_source_plate=running_source_plate.reset_index(level=0).set_index('Item')
+    
+    if multiRpW:
+        for i in range(len(vol_table_df)):
+            try: 
+                nrxn = int(vol_table_df['Label'][i].split('_')[0])
+            except:
+                nrxn = 1
+            vol_table_df.iloc[i,1:] = vol_table_df.iloc[i,1:]*nrxn
 
     return vol_table_df
 
