@@ -1,0 +1,9 @@
+,1,2,3,4,5,6,7,8,9,10,11,12
+A,P++,P++,P++,Std_1,Std_1,Std_1,zero,zero,zero,zero,zero,zero
+B,P-T+C,P-T+C,P-T+C,Std_2,Std_2,Std_2,T0,T0,T0,T0,T0,T0
+C,P+T-C,P+T-C,P+T-C,Std_3,Std_3,Std_3,0P,0P,0P,0P,0P,0P
+D,P-T-C,P-T-C,P-T-C,Std_4,Std_4,Std_4,TP,TP,TP,TP,TP,TP
+E,N++,N++,N++,Std_5,Std_5,Std_5,,,,,,
+F,,,,,,,,,,,,
+G,,,,,,,,,,,,
+H,,,,,,,,,,,,
