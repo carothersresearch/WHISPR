@@ -57,4 +57,5 @@ vol_table_df = generateVolumeTable(mt_biosyn, sps, rxn_vol = 22.5, total_vol = 2
 
 protocol_biosyn_dfs = writeProtocol(sp_types, vol_table_df, layout_biosyn1,sps, update_source_vol= folder +'combined_sp_updated.xlsx')
 
-protocol_biosyn_df.to_csv('protocols/2212.csv',index = False)
+protocol_biosyn_dfs[0].to_csv(folder + 'biosyn_protocol_384.csv',index = False)
+protocol_biosyn_dfs[1].to_csv(folder + 'biosyn_protocol_6RES.csv',index = False)
