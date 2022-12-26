@@ -9,21 +9,21 @@ rxn_vol = 10
 source_plate_type = '384PP_AQ_BP' 
 
 os.getcwd()
-folder = os.getcwd() + '/Experiments/221213_ATP_regen/'
-sp_plasmids_file = folder + 'arpae_plasmids.xlsx'
+folder = os.getcwd() + '/Experiments/221227_Mdh/'
+sp_plasmids_file = folder + 'plasmids_sp.xlsx'
 sp_plasmids = pd.read_excel(sp_plasmids_file, index_col = 0)
 sp_plasmids = sp_plasmids[~sp_plasmids['Well'].isna()]
 
-layout_genex_file = folder + 'atp-regen-genex-pl.csv'
+layout_genex_file = folder + 'genex-pl.csv'
 layout_genex = pd.read_csv(layout_genex_file, index_col = 0, dtype = str)
 
-mt_genex_file = folder + 'atp-regen-genex-mt.csv'
+mt_genex_file = folder + 'genex-mt.csv'
 mt_genex = pd.read_csv(mt_genex_file, index_col = 0, dtype = str).fillna(0)
 
 # biosynthesis. 25ul rxns, 2.5ul of diluted txtl
 
 # buffer source plate
-sp_buffers_file = folder + 'UPDATE_buffers_sp.xlsx'
+sp_buffers_file = folder + 'buffers-sp_REFILLED.xlsx'
 sp_buffers= pd.read_excel(sp_buffers_file, index_col = 0)
 sp_buffers = sp_buffers[~sp_buffers['Well'].isna()]
 
@@ -39,7 +39,7 @@ sp_types = ['384PP_AQ_BP','6RES_AQ_BP2','384PP_AQ_BP'] # triple check this
 sps = [sp_buffers,sp_hepes,sp_genex]
 
 # get mixing table
-mt_biosyn_file = folder + 'atp-regen-buffers-mt.csv'
+mt_biosyn_file = folder + 'buffers-mt.csv'
 mt_biosyn = pd.read_csv(mt_biosyn_file, index_col = 0, dtype = str).fillna(0)
 
 # check formats
@@ -57,4 +57,4 @@ vol_table_df = generateVolumeTable(mt_biosyn, sps, rxn_vol = 22.5, total_vol = 2
 
 protocol_biosyn_dfs = writeProtocol(sp_types, vol_table_df, layout_biosyn1,sps, update_source_vol= folder +'combined_sp_updated.xlsx')
 
-#protocol_biosyn_df.to_csv('protocols/221018_arpae_biosyn.csv',index = False)
+protocol_biosyn_df.to_csv('protocols/2212.csv',index = False)
