@@ -5,26 +5,26 @@ import os
 For user to change according to run
 """
 # gene expression. 2.5ul rxns, 75% txtl
-rxn_vol = 10
+rxn_vol = 3
 source_plate_type = '384PP_AQ_BP' 
 
 os.getcwd()
-folder = os.getcwd() + '/Experiments/221227_Mdh/'
+folder = os.getcwd() + '/ARPA-E/Experiments/230111_Cofactors/'
 sp_plasmids_file = folder + 'plasmids_sp.xlsx'
-sp_plasmids = pd.read_excel(sp_plasmids_file, index_col = 0)
+sp_plasmids = pd.read_excel(sp_plasmids_file, index_col = 0, engine='openpyxl')
 sp_plasmids = sp_plasmids[~sp_plasmids['Well'].isna()]
 
 layout_genex_file = folder + 'genex-pl.csv'
 layout_genex = pd.read_csv(layout_genex_file, index_col = 0, dtype = str)
 
-mt_genex_file = folder + 'genex-mt.csv'
+mt_genex_file = folder + '230111_genex_mt.csv'
 mt_genex = pd.read_csv(mt_genex_file, index_col = 0, dtype = str).fillna(0)
 
 # biosynthesis. 25ul rxns, 2.5ul of diluted txtl
 
 # buffer source plate
-sp_buffers_file = folder + 'buffers-sp_REFILLED.xlsx'
-sp_buffers= pd.read_excel(sp_buffers_file, index_col = 0)
+sp_buffers_file = folder + 'buffers-sp.xlsx'
+sp_buffers= pd.read_excel(sp_buffers_file, index_col = 0, engine='openpyxl')
 sp_buffers = sp_buffers[~sp_buffers['Well'].isna()]
 
 # HEPES reservoir (actually same plate as Tris)
@@ -39,14 +39,14 @@ sp_types = ['384PP_AQ_BP','6RES_AQ_BP2','384PP_AQ_BP'] # triple check this
 sps = [sp_buffers,sp_hepes,sp_genex]
 
 # get mixing table
-mt_biosyn_file = folder + 'buffers-mt_2.csv'
+mt_biosyn_file = folder + 'buffers-mt.csv'
 mt_biosyn = pd.read_csv(mt_biosyn_file, index_col = 0, dtype = str).fillna(0)
 
 # check formats
 checkInputs(sps,mt_biosyn,sp_types)
 
 # layouts for destination plate(s)
-layout_biosyn1_file = folder + 'biosyn_pl_2.csv' 
+layout_biosyn1_file = folder + 'biosyn_pl.csv' 
 layout_biosyn1 = pd.read_csv(layout_biosyn1_file, index_col = 0, dtype = str)
 # filename = '221018_arpae_biosyn_neg.csv'
 # layout_biosyn2_file = 'plate_layouts/'+filename 
@@ -57,5 +57,5 @@ vol_table_df = generateVolumeTable(mt_biosyn, sps, rxn_vol = 22.5, total_vol = 2
 
 protocol_biosyn_dfs = writeProtocol(sp_types, vol_table_df, layout_biosyn1,sps, update_source_vol= folder +'combined_sp_updated.xlsx')
 
-protocol_biosyn_dfs[0].to_csv(folder + 'biosyn_protocol_384_2.csv',index = False)
-protocol_biosyn_dfs[1].to_csv(folder + 'biosyn_protocol_6RES_2.csv',index = False)
+protocol_biosyn_dfs[0].to_csv(folder + 'biosyn_protocol_384.csv',index = False)
+protocol_biosyn_dfs[1].to_csv(folder + 'biosyn_protocol_6RES.csv',index = False)
