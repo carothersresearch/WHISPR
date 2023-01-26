@@ -9,7 +9,7 @@ rxn_vol = 3
 source_plate_type = '384PP_AQ_BP' 
 
 os.getcwd()
-folder = os.getcwd() + '/ARPA-E/Experiments/230111_Cofactors/'
+folder = os.getcwd() + '/Experiments/230119_troubleshoot/'
 sp_plasmids_file = folder + 'plasmids_sp.xlsx'
 sp_plasmids = pd.read_excel(sp_plasmids_file, index_col = 0, engine='openpyxl')
 sp_plasmids = sp_plasmids[~sp_plasmids['Well'].isna()]
@@ -17,13 +17,13 @@ sp_plasmids = sp_plasmids[~sp_plasmids['Well'].isna()]
 layout_genex_file = folder + 'genex-pl.csv'
 layout_genex = pd.read_csv(layout_genex_file, index_col = 0, dtype = str)
 
-mt_genex_file = folder + '230111_genex_mt.csv'
+mt_genex_file = folder + 'genex_mt.csv'
 mt_genex = pd.read_csv(mt_genex_file, index_col = 0, dtype = str).fillna(0)
 
 # biosynthesis. 25ul rxns, 2.5ul of diluted txtl
 
 # buffer source plate
-sp_buffers_file = folder + 'buffers-sp.xlsx'
+sp_buffers_file = folder + 'buffers_sp.xlsx'
 sp_buffers= pd.read_excel(sp_buffers_file, index_col = 0, engine='openpyxl')
 sp_buffers = sp_buffers[~sp_buffers['Well'].isna()]
 
