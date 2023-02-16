@@ -63,9 +63,7 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
                 raise NameError('Volumes of source plate '+str(k)+' are below working volume range.')
         
         if not np.all([m in combine_sps(source_plate)['Label'] for m in mixing_table_df.columns]):
-            missing = str(mt_genex.columns[not [m in (sp_plasmids)['Label'] for m in mt_genex.columns]])
-            raise NameError('Source plate does not contain some items in the mixing table: ' + missing + ' ')
-
+            raise NameError('Source plate does not contain some items in the mixing table')
 
         for sp in source_plate:
             if sp.index.name != 'Item':
