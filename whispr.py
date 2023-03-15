@@ -62,7 +62,7 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
             if any([v < vol_min for v in vol]):
                 raise NameError('Volumes of source plate '+str(k)+' are below working volume range.')
         
-        if not np.all([m in combine_sps(source_plate)['Label'] for m in mixing_table_df.columns]):
+        if not np.all([m in combine_sps(source_plate)['Label']str.casefold().values for m in mixing_table_df.columns.str.casefold()]):
             raise NameError('Source plate does not contain some items in the mixing table')
 
         for sp in source_plate:
@@ -138,7 +138,7 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
             vol+=vol_to_add
 
         if round(vol,3) > rxn_vol:
-            print(vol_table_df.loc[vol_table_df['Label'] == row].to_markdown())
+            #print(vol_table_df.loc[vol_table_df['Label'] == row].to_markdown())
             raise NameError('Volume of '+ row+ ' exceeds '+str(rxn_vol) + 'ul. Total volume is '+ str(round(vol,3))+' Please change volumes and try again.')
         else:
             if fill_with:

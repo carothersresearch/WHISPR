@@ -1,0 +1,11 @@
+Source Plate Name,Source Plate Type,Source Well,Destination Plate Name,Destination Well,Transfer Volume
+Source[2],6RES_AQ_BP2,A2,Destination[1],A11,17225.0
+Source[2],6RES_AQ_BP2,A2,Destination[1],A12,15000.0
+Source[2],6RES_AQ_BP2,A2,Destination[1],B11,17225.0
+Source[2],6RES_AQ_BP2,A2,Destination[1],B12,15000.0
+Source[2],6RES_AQ_BP2,A2,Destination[1],C11,17500.0
+Source[2],6RES_AQ_BP2,A2,Destination[1],C12,13250.0
+Source[2],6RES_AQ_BP2,A2,Destination[1],D11,12500.0
+Source[2],6RES_AQ_BP2,A2,Destination[1],D12,8250.0
+Source[2],6RES_AQ_BP2,A2,Destination[1],E11,5000.0
+Source[2],6RES_AQ_BP2,A2,Destination[1],E12,750.0
