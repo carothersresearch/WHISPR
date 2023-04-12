@@ -61,10 +61,17 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
                 raise NameError('Volumes of source plate '+str(k)+' are above working volume range.')
             if any([v < vol_min for v in vol]):
                 raise NameError('Volumes of source plate '+str(k)+' are below working volume range.')
-        
-        if not np.all([m in combine_sps(source_plate)['Label']str.casefold().values for m in mixing_table_df.columns.str.casefold()]):
-            raise NameError('Source plate does not contain some items in the mixing table')
 
+        if not np.all([m in combine_sps(source_plate)['Label'].str.casefold().values for m in mixing_table_df.columns.str.casefold()]):
+        #if not np.all([m in combine_sps(source_plate)['Label'] for m in mixing_table_df.columns]):
+            ##
+            missing = []
+            for m in mixing_table_df.columns.str.casefold():
+                missing.append(m in combine_sps(source_plate)['Label'].str.casefold().values)
+            false_val = [not value for value in missing]
+            ##
+            raise NameError('Source plate does not contain some items in the mixing table: ' + str(list(mixing_table_df.columns[false_val])))
+       
         for sp in source_plate:
             if sp.index.name != 'Item':
                 sp.index = sp['Label']
@@ -103,10 +110,11 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
             conc_to_add = float(mixing_table_df.loc[row][column])
             label_indx = 0
             conc_of_source = running_source_plate.loc[column]['Concentration']
-            if (type(conc_of_source) != np.float64) and (type(conc_of_source) != float):
-                while running_source_plate.loc[column].sort_values(ascending = False, by = 'Concentration')['Volume'][label_indx] <= min_well_vol:
+            if ( (type(conc_of_source) != np.float64) and (type(conc_of_source) != float) and (type(conc_of_source) != int)):
+                while (running_source_plate.loc[column].sort_values(ascending = False, by = 'Concentration')['Volume'][label_indx] <= min_well_vol):
                     label_indx += 1
                 else: 
+                    print(type(conc_of_source))
                     conc_of_source = conc_of_source.sort_values(ascending = False)[label_indx]
                     
             #conc_of_source = source_plate_df[source_plate_df['Label'] == column]['Concentration'].sort_values(ascending = False)[label_indx]
