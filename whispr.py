@@ -24,6 +24,9 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
 
 
     '''
+    if 'PlateID' in source_plate.columns:
+        raise NameError('Unexpected PlateID column in source plate')
+    
     if type(source_plate) is not list: source_plate = [source_plate]
     if type(plate_type) is not list: plate_type = [plate_type]
     if len(source_plate) is not len(plate_type): 
