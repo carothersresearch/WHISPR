@@ -24,10 +24,14 @@ def checkInputs(source_plate, mixing_table_df, plate_type = '384PP_AQ_BP'):
 
 
     '''
-    if 'PlateID' in source_plate.columns:
-        raise NameError('Unexpected PlateID column in source plate')
+    
     
     if type(source_plate) is not list: source_plate = [source_plate]
+
+    if 'PlateID' in source_plate[0].columns:
+        raise NameError('Unexpected PlateID column in source plate')
+    
+    
     if type(plate_type) is not list: plate_type = [plate_type]
     if len(source_plate) is not len(plate_type): 
         raise NameError('Mismatch in number of plates and plate types')
@@ -382,4 +386,6 @@ def writeProtocol(plate_type, vol_table, output_layout,source_plate_df, update_s
         for pt in np.unique(plate_type):
             outputs.append(output_df[output_df['Source Plate Type'] == pt])
         
+        if not outputs[0].empty:
+            outputs[0].sort_values(by = 'Source Plate Name', axis = 0)
         return outputs

@@ -9,21 +9,30 @@ rxn_vol = 3
 source_plate_type = '384PP_AQ_BP' 
 
 os.getcwd()
-folder = os.getcwd() + '/Experiments/230419_mod1-3/'
-sp_plasmids_file = folder + 'plasmids_sp_230419.xlsx'
+folder = os.getcwd() + '/Experiments/230503/'
+sp_plasmids_file = folder + 'plasmids_sp_230503.xlsx'
 sp_plasmids = pd.read_excel(sp_plasmids_file, index_col = 0, engine='openpyxl')
 sp_plasmids = sp_plasmids[~sp_plasmids['Well'].isna()]
 
-layout_genex_file = folder + 'genex-pl-384.csv'
+layout_genex_file = folder + 'genex_pl_96.csv'
 layout_genex = pd.read_csv(layout_genex_file, index_col = 0, dtype = str)
 
-mt_genex_file = folder + 'genex_mt_230419.xlsx'
+mt_genex_file = folder + 'genex_mt_230503.xlsx'
 mt_genex = pd.read_excel(mt_genex_file, index_col = 0, dtype = str, engine = 'openpyxl').fillna(0)
 
 # biosynthesis. 25ul rxns, 2.5ul of diluted txtl
 
+checkInputs(sp_plasmids, mt_genex,source_plate_type)
+
+vol_table_df = generateVolumeTable(mt_genex, sp_plasmids, rxn_vol = 0.25*rxn_vol, total_vol = rxn_vol, fill_with='water', multiRpW = False)
+
+#specify rxn_vol (default = 2.5) and total_vol (default = 10) if you'd like to change the volume of each individual replicate or the total reaction volume
+protocol_genex_df = writeProtocol(source_plate_type, vol_table_df, layout_genex,sp_plasmids, update_source_vol=folder+'plasmids_sp_updated.xlsx')
+protocol_genex_df = protocol_genex_df[0]
+
+
 # buffer source plate
-sp_buffers_file = folder + 'buffers_sp.xlsx'
+sp_buffers_file = folder + 'buffers_sp_230503.xlsx'
 sp_buffers= pd.read_excel(sp_buffers_file, index_col = 0, engine='openpyxl')
 sp_buffers = sp_buffers[~sp_buffers['Well'].isna()]
 
@@ -39,7 +48,7 @@ sp_types = ['384PP_AQ_BP','6RES_AQ_BP2','384PP_AQ_BP'] # triple check this
 sps = [sp_buffers,sp_hepes,sp_genex]
 
 # get mixing table
-mt_biosyn_file = folder + 'buffers-mt-noHT.xlsx'
+mt_biosyn_file = folder + 'buffers_mt_230503.xlsx'
 mt_biosyn = pd.read_excel(mt_biosyn_file, index_col = 0, dtype = str, engine = 'openpyxl').fillna(0)
 
 # check formats

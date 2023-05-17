@@ -1,0 +1,294 @@
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V glyA_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_1.d" ,"1" ,2.657,2.734,2.809,6779.11,21878.38,0.61,0.75,0.60,0.051,,471.64,675.20,,,,,0.00,0.00,0.81,6619.37,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_1.d" ,"2" ,4.756,4.845,5.227,906482.41,3614591.53,100.00,100.00,99.40,0.471,,2618.37,8016.31,,,,,2618.37,8016.31,,910116.75,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V glyA_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_2.d" ,"1" ,2.671,2.734,2.823,9092.10,25990.28,0.46,0.54,0.46,0.041,,465.10,434.31,,,,,0.00,0.00,0.78,9163.92,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_2.d" ,"2" ,4.705,4.844,5.160,1672657.33,5644888.62,100.00,100.00,99.54,0.454,,4602.29,29918.30,,,,,4602.29,29918.30,,1684978.50,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V glyA_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_3.d" ,"1" ,2.695,2.725,2.813,7424.92,23714.35,0.44,0.47,0.44,0.045,,547.85,661.48,,,,,0.00,0.00,0.33,7041.55,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_3.d" ,"2" ,4.775,4.841,5.168,1570170.13,5425836.20,100.00,100.00,99.56,0.393,,3641.94,22905.70,,,,,3641.94,22905.69,,1577068.00,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_neg_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V glyA_neg_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_neg_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_neg_1.d" ,"1" ,2.602,2.737,2.831,6839.40,24919.32,0.56,0.55,0.55,0.051,,203.72,0.00,,,,,0.00,0.00,0.97,6933.90,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_neg_1.d" ,"2" ,4.771,4.848,5.175,1244645.31,4488782.15,100.00,100.00,99.45,0.404,,2349.67,18669.25,,,,,2349.66,18669.25,,1250124.25,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_neg_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V glyA_neg_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_neg_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_neg_2.d" ,"1" ,2.700,2.740,2.837,6283.70,23512.46,0.38,0.35,0.38,0.053,,859.93,770.85,,,,,0.00,0.00,0.68,5458.99,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_neg_2.d" ,"2" ,4.736,4.841,5.174,1788521.35,6196092.93,100.00,100.00,99.62,0.438,,4133.68,18769.79,,,,,4133.67,18769.79,,1796175.13,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_neg_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V glyA_neg_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_neg_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_neg_3.d" ,"1" ,2.693,2.736,2.798,7074.53,21494.38,0.26,0.29,0.25,0.043,,241.60,610.35,,,,,0.00,0.00,0.70,7026.29,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_neg_3.d" ,"2" ,4.757,4.840,5.167,2420200.74,8410457.48,100.00,100.00,99.75,0.410,,3183.57,24259.67,,,,,3183.57,24259.67,,2427656.25,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V glyA_sds_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_1.d" ,"1" ,2.692,2.730,2.807,6742.70,25020.98,0.26,0.24,0.26,0.049,,697.99,868.41,,,,,0.00,0.00,0.31,6465.24,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_1.d" ,"2" ,4.755,4.844,5.143,2800776.45,9579334.89,100.00,100.00,99.74,0.388,,2498.17,40454.68,,,,,2498.17,40454.68,,2811951.00,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V glyA_sds_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_2.d" ,"1" ,2.695,2.738,2.829,6638.45,24252.63,0.35,0.32,0.35,0.048,,324.13,647.20,,,,,0.00,0.00,0.52,6177.87,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_2.d" ,"2" ,4.789,4.844,5.166,2051057.06,6901091.08,100.00,100.00,99.65,0.377,,6748.85,24286.71,,,,,6748.84,24286.70,,2060384.13,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V glyA_sds_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_3.d" ,"1" ,2.670,2.738,2.785,7825.55,26145.28,0.20,0.21,0.20,0.050,,610.98,2048.93,,,,,0.00,0.00,0.79,7995.92,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_3.d" ,"2" ,4.781,4.842,5.141,3654105.66,13010277.02,100.00,100.00,99.80,0.360,,6910.86,48120.32,,,,,6910.86,48120.32,,3667991.25,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_neg_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V glyA_sds_neg_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_neg_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_neg_1.d" ,"1" ,2.696,2.732,2.802,6369.09,20778.93,0.36,0.38,0.36,0.047,,563.19,540.06,,,,,0.00,0.00,0.42,5668.76,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_neg_1.d" ,"2" ,4.701,4.851,5.167,1659296.40,5758815.67,100.00,100.00,99.64,0.465,,2081.54,23560.52,,,,,2081.54,23560.52,,1668283.00,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_neg_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V glyA_sds_neg_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_neg_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_neg_2.d" ,"1" ,2.704,2.740,2.812,6792.38,23529.83,0.31,0.32,0.31,0.047,,1025.33,635.66,,,,,0.00,0.00,0.56,6800.90,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_neg_2.d" ,"2" ,4.780,4.846,5.140,2098926.52,7531265.12,100.00,100.00,99.69,0.360,,4536.95,39345.63,,,,,4536.95,-13916.03,,2100056.75,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_neg_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V glyA_sds_neg_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_neg_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_neg_3.d" ,"1" ,3.796,3.837,3.878,7948.31,10292.79,0.06,0.19,0.06,0.027,,923.17,1972.67,,,,,883.54,1140.29,0.89,9207.18,,,  ,265.0757,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\glyA_sds_neg_3.d" ,"2" ,4.756,4.845,5.116,4203922.11,16885882.48,100.00,100.00,99.94,0.360,,4384.48,126449.20,,,,,4384.47,-55577.03,,4193540.25,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\init.d"," -ESI EIC(456.1632) Scan Frag=175.0V init.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\init.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\init.d" ,"1" ,1.035,1.095,1.135,2866.40,8883.41,100.00,100.00,100.00,0.060,,1219.38,1541.16,,,,,0.00,0.00,1.40,3248.32,,,  ,248.9717,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mdh_ctrl_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mdh_ctrl_1.d "
+"No integration results available"
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mdh_ctrl_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mdh_ctrl_2.d "
+"No integration results available"
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mdh_ctrl_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mdh_ctrl_3.d "
+"No integration results available"
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mdh_neg_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mdh_neg_1.d "
+"No integration results available"
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mdh_neg_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mdh_neg_2.d "
+"No integration results available"
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mdh_neg_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mdh_neg_3.d "
+"No integration results available"
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mid.d"," -ESI EIC(456.1632) Scan Frag=175.0V mid.d "
+"No integration results available"
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_ctrl_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_ctrl_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_ctrl_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_ctrl_1.d" ,"1" ,2.684,2.760,2.917,6586.84,39950.49,30.50,28.75,23.37,0.084,,685.32,701.81,,,,,0.00,0.00,0.63,6339.03,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_ctrl_1.d" ,"2" ,4.462,4.634,4.978,22914.69,130995.63,100.00,100.00,76.63,0.515,,565.42,2496.02,,,,,565.42,938.49,,23604.46,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_ctrl_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_ctrl_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_ctrl_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_ctrl_2.d" ,"1" ,2.294,2.380,2.464,6255.97,29374.45,21.47,26.74,17.67,0.062,,799.76,1397.27,,,,,0.00,0.00,0.81,7019.30,,,  ,156.9884,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_ctrl_2.d" ,"2" ,4.522,4.633,4.976,23397.18,136846.45,100.00,100.00,82.33,0.454,,884.29,2379.70,,,,,156.84,627.37,,23668.79,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_ctrl_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_ctrl_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_ctrl_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_ctrl_3.d" ,"1" ,2.707,2.741,2.759,6617.69,13539.76,10.13,24.31,9.20,0.030,,898.53,4740.26,,,,,6.28,5.09,1.35,6703.56,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_ctrl_3.d" ,"2" ,4.540,4.635,4.950,27227.27,133608.36,100.00,100.00,90.80,0.410,,969.64,1909.89,,,,,969.64,1909.89,,28413.00,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_fdh_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_fdh_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_fdh_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_fdh_1.d" ,"1" ,2.656,2.738,2.804,11517.13,33403.32,8.72,13.81,8.02,0.040,,474.15,318.89,,,,,0.00,0.00,1.09,12162.83,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_fdh_1.d" ,"2" ,4.576,4.848,4.942,83382.20,383156.25,100.00,100.00,91.98,0.366,,3089.27,4724.80,,,,,3089.27,1698.48,,85438.92,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_fdh_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_fdh_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_fdh_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_fdh_2.d" ,"1" ,2.692,2.735,2.808,10918.89,35457.84,9.94,16.66,9.04,0.043,,368.43,510.33,,,,,0.00,0.00,0.76,11632.90,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_fdh_2.d" ,"2" ,4.518,4.845,4.928,65537.58,356771.24,100.00,100.00,90.96,0.410,,2450.32,4690.17,,,,,2450.32,2711.41,,68196.05,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_fdh_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_fdh_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_fdh_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_fdh_3.d" ,"1" ,2.679,2.733,2.917,11129.12,42479.17,11.19,17.56,10.06,0.050,,0.00,229.18,,,,,0.00,0.00,0.59,11066.72,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_fdh_3.d" ,"2" ,4.539,4.850,4.949,63370.66,379692.77,100.00,100.00,89.94,0.410,,2825.54,3825.57,,,,,1298.62,2164.36,,65324.45,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_glyA_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_1.d" ,"1" ,2.685,2.742,2.826,8310.22,31129.70,13.42,18.89,11.83,0.056,,0.00,223.92,,,,,0.00,0.00,0.64,7037.38,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_1.d" ,"2" ,4.484,4.639,4.933,43991.93,231997.82,100.00,100.00,88.17,0.449,,892.06,2202.91,,,,,892.06,2202.91,,45337.15,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_glyA_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_2.d" ,"1" ,2.588,2.729,2.828,7254.48,33969.62,12.14,13.56,10.82,0.061,,747.70,713.74,,,,,0.00,0.00,0.54,7574.48,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_2.d" ,"2" ,4.551,4.634,4.945,53492.39,279858.62,100.00,100.00,89.18,0.393,,428.69,2315.19,,,,,428.69,357.21,,53905.98,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_glyA_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_3.d" ,"1" ,2.686,2.744,2.889,9898.36,36004.68,12.53,17.43,11.14,0.057,,819.63,693.62,,,,,0.00,0.00,0.64,10602.44,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_3.d" ,"2" ,4.542,4.636,4.963,56778.83,287318.27,100.00,100.00,88.86,0.421,,1091.90,2736.06,,,,,1091.90,382.43,,57711.93,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_neg_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_glyA_neg_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_neg_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_neg_1.d" ,"1" ,2.595,2.748,2.920,9132.98,45560.27,11.83,13.28,10.58,0.073,,678.74,209.01,,,,,0.00,0.00,1.02,9192.34,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_neg_1.d" ,"2" ,4.576,4.853,4.941,68754.86,385192.98,100.00,100.00,89.42,0.366,,927.13,3998.65,,,,,927.13,1392.25,,70034.37,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_neg_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_glyA_neg_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_neg_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_neg_2.d" ,"1" ,2.686,2.740,2.832,9359.02,35740.38,7.84,12.86,7.27,0.056,,705.62,647.96,,,,,0.00,0.00,0.80,9714.51,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_neg_2.d" ,"2" ,4.523,4.639,4.977,72776.26,455657.79,100.00,100.00,92.73,0.454,,806.94,4397.78,,,,,806.94,487.06,,73501.28,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_neg_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_glyA_neg_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_neg_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_neg_3.d" ,"1" ,2.688,2.726,2.819,9124.94,35922.46,8.12,12.28,7.51,0.053,,441.37,681.33,,,,,0.00,0.00,0.35,9570.04,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_glyA_neg_3.d" ,"2" ,4.552,4.640,4.928,74303.89,442634.74,100.00,100.00,92.49,0.377,,782.83,3991.83,,,,,782.83,995.79,,75136.84,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_glyA_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_lrg_glyA_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_glyA_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_glyA_1.d" ,"1" ,2.856,2.888,2.969,30527.90,76343.59,2.59,7.25,2.53,0.036,,7042.08,0.00,,,,,0.00,0.00,0.68,28451.75,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_glyA_1.d" ,"2" ,4.568,4.839,5.139,421117.12,2947151.93,100.00,100.00,97.47,0.571,,2323.39,3217.84,,,,,2323.39,3217.84,,423866.03,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_glyA_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_lrg_glyA_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_glyA_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_glyA_2.d" ,"1" ,3.034,3.217,3.341,19507.17,77756.77,2.49,1.96,2.43,0.054,,0.00,1295.67,,,,,0.00,152.15,0.67,19987.07,,,  ,216.0800,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_glyA_2.d" ,"2" ,4.595,4.844,4.949,996872.97,3122620.48,100.00,100.00,97.57,0.355,,1713.63,16435.03,,,,,1713.63,16435.03,,1008937.88,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_glyA_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_lrg_glyA_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_glyA_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_glyA_3.d" ,"1" ,3.165,3.216,3.333,18325.93,71447.22,2.34,1.92,2.29,0.055,,829.99,1425.42,,,,,29.87,57.00,0.62,18657.58,,,  ,216.0800,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_glyA_3.d" ,"2" ,4.560,4.837,4.970,953051.59,3048637.13,100.00,100.00,97.71,0.410,,864.04,12945.67,,,,,864.03,12945.66,,962078.75,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_neg_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_lrg_neg_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_neg_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_neg_1.d" ,"1" ,2.860,2.892,2.968,29831.37,80526.35,1.75,3.13,1.72,0.040,,8500.32,0.00,,,,,0.00,0.00,0.85,29600.61,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_neg_1.d" ,"2" ,4.583,4.832,5.131,951971.47,4602033.73,100.00,100.00,98.28,0.548,,3199.39,2668.29,,,,,3199.38,2668.28,,954929.44,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_neg_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_lrg_neg_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_neg_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_neg_2.d" ,"1" ,3.155,3.216,3.328,16168.90,67140.77,2.23,1.76,2.18,0.054,,723.53,1433.76,,,,,60.22,179.16,0.61,16586.61,,,  ,216.0800,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_neg_2.d" ,"2" ,4.591,4.846,4.984,917876.01,3012950.24,100.00,100.00,97.82,0.393,,713.89,14600.76,,,,,713.88,14600.76,,927586.56,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_neg_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_lrg_neg_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_neg_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_neg_3.d" ,"1" ,3.112,3.218,3.305,14639.29,61462.02,1.96,1.59,1.92,0.061,,495.31,1439.68,,,,,0.00,0.00,0.91,12088.93,,,  ,216.0800,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_neg_3.d" ,"2" ,4.595,4.844,4.961,923188.38,3134257.10,100.00,100.00,98.08,0.366,,2516.54,12446.59,,,,,2516.53,-12135.97,,915714.63,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_sds_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_lrg_sds_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_sds_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_sds_1.d" ,"1" ,2.847,2.880,2.966,29122.54,74601.00,3.33,7.34,3.23,0.039,,6741.33,0.00,,,,,0.00,0.00,0.74,29309.56,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_sds_1.d" ,"2" ,4.559,4.831,5.141,396515.49,2238100.05,100.00,100.00,96.77,0.582,,3091.18,1593.51,,,,,3091.17,1593.51,,398907.75,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_sds_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_lrg_sds_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_sds_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_sds_2.d" ,"1" ,2.826,2.855,2.949,17040.21,48155.06,2.58,2.88,2.52,0.041,,3626.14,440.92,,,,,0.00,0.00,0.56,16397.46,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_sds_2.d" ,"2" ,4.600,4.839,5.005,591933.96,1864622.81,100.00,100.00,97.48,0.404,,2195.01,6080.26,,,,,2195.01,6080.26,,596417.69,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_sds_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_lrg_sds_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_sds_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_sds_3.d" ,"1" ,3.163,3.213,3.329,15493.91,64775.60,3.55,2.72,3.43,0.059,,1132.27,1467.01,,,,,44.31,83.17,0.49,14879.60,,,  ,216.0800,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_lrg_sds_3.d" ,"2" ,4.594,4.843,5.081,570001.19,1822246.97,100.00,100.00,96.57,0.488,,1194.29,1745.21,,,,,1194.29,1745.21,,571477.19,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_neg_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_neg_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_neg_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_neg_1.d" ,"1" ,2.740,2.762,2.824,6448.42,23198.18,22.15,34.77,18.13,0.051,,4936.33,2520.00,,,,,0.00,0.00,0.46,5647.72,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_neg_1.d" ,"2" ,4.540,4.640,5.083,18546.46,104724.14,100.00,100.00,81.87,0.543,,748.91,2520.40,,,,,748.91,958.21,,19333.81,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_neg_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_neg_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_neg_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_neg_2.d" ,"1" ,2.304,2.394,2.459,6114.75,31904.01,37.25,30.42,27.14,0.065,,803.48,1880.09,,,,,0.00,0.00,1.26,6101.03,,,  ,156.9884,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_neg_2.d" ,"2" ,4.492,4.653,4.935,20101.62,85649.16,100.00,100.00,72.86,0.443,,1266.28,563.65,,,,,1266.28,563.65,,21113.20,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_neg_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_neg_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_neg_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_neg_3.d" ,"1" ,2.698,2.750,2.906,6369.47,39164.93,38.47,33.71,27.78,0.079,,638.13,849.99,,,,,0.00,0.00,0.44,6153.42,,,  ,141.0136,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_neg_3.d" ,"2" ,4.475,4.646,4.918,18897.45,101799.92,100.00,100.00,72.22,0.443,,1277.46,3727.70,,,,,337.57,843.93,,19431.24,,,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_sds_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_1.d" ,"1" ,2.683,2.767,2.861,8725.97,40364.03,100.00,100.00,100.00,0.068,,1031.90,1244.24,,,,,0.00,0.00,1.23,8512.79,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_sds_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_2.d" ,"1" ,2.678,2.740,2.855,7259.76,33516.61,100.00,100.00,100.00,0.068,,313.10,635.52,,,,,0.00,0.00,0.38,7812.69,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_sds_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_3.d" ,"1" ,2.694,2.742,2.842,7056.65,31562.08,100.00,100.00,100.00,0.062,,460.54,896.41,,,,,0.00,0.00,0.53,7113.56,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_neg_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_sds_neg_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_neg_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_neg_1.d" ,"1" ,2.507,2.759,2.841,6871.84,46198.22,100.00,100.00,100.00,0.091,,980.16,1033.95,,,,,0.00,0.00,1.45,7216.91,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_neg_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_sds_neg_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_neg_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_neg_2.d" ,"1" ,2.675,2.741,2.938,7662.69,51363.93,100.00,100.00,100.00,0.089,,209.06,669.80,,,,,0.00,0.00,0.30,8306.93,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_neg_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod1_sds_neg_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_neg_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod1_sds_neg_3.d" ,"1" ,2.758,2.771,2.818,7346.27,20882.90,100.00,100.00,100.00,0.047,,5995.40,2917.03,,,,,0.00,0.00,0.33,7332.41,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod3_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_1.d" ,"1" ,2.362,2.381,2.417,6911.87,18995.78,100.00,100.00,100.00,0.046,,3674.18,5498.39,,,,,0.00,0.00,0.56,7093.41,,,  ,156.9884,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod3_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_2.d" ,"1" ,2.699,2.726,2.783,6425.65,25941.10,100.00,100.00,100.00,0.058,,998.44,5310.20,,,,,0.00,0.00,0.24,6761.79,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod3_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_3.d" ,"1" ,2.424,2.434,2.448,6780.80,7742.54,100.00,100.00,100.00,0.019,,5030.76,4681.56,,,,,0.00,0.00,0.79,6465.19,,,  ,156.9884,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_neg_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod3_neg_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_neg_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_neg_1.d" ,"1" ,2.697,2.747,2.780,6513.32,23155.75,100.00,100.00,100.00,0.055,,947.51,4417.29,,,,,0.00,0.00,1.05,6452.55,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_neg_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod3_neg_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_neg_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_neg_2.d" ,"1" ,2.633,2.733,2.755,6663.06,18992.41,100.00,100.00,100.00,0.048,,577.37,5040.81,,,,,0.00,0.00,1.46,5528.21,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_neg_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V mod3_neg_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_neg_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\mod3_neg_3.d" ,"1" ,2.675,2.735,2.769,7303.04,21649.15,100.00,100.00,100.00,0.042,,1181.25,4930.20,,,,,0.00,0.00,0.79,8363.50,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_ctrl_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V pyc_ctrl_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_ctrl_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_ctrl_1.d" ,"1" ,2.661,2.727,2.833,8108.16,49655.09,100.00,100.00,100.00,0.081,,848.73,2937.13,,,,,0.00,0.00,0.27,7110.17,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_ctrl_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V pyc_ctrl_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_ctrl_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_ctrl_2.d" ,"1" ,2.751,2.763,2.798,9285.18,20518.27,100.00,100.00,100.00,0.037,,7133.78,5545.83,,,,,0.00,0.00,0.40,9968.00,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_ctrl_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V pyc_ctrl_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_ctrl_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_ctrl_3.d" ,"1" ,2.699,2.772,2.845,8717.59,48684.85,100.00,100.00,100.00,0.073,,554.51,3371.29,,,,,0.00,0.00,1.06,8576.44,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_neg_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V pyc_neg_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_neg_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_neg_1.d" ,"1" ,2.771,2.782,2.845,7678.71,20864.69,100.00,100.00,100.00,0.045,,6399.03,1845.40,,,,,0.00,0.00,0.29,6920.67,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_neg_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V pyc_neg_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_neg_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_neg_2.d" ,"1" ,2.751,2.763,2.844,7089.13,28751.61,100.00,100.00,100.00,0.068,,5938.63,2596.61,,,,,0.00,0.00,0.18,7239.10,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_neg_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V pyc_neg_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_neg_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\pyc_neg_3.d" ,"1" ,2.674,2.778,2.837,7440.05,45966.96,100.00,100.00,100.00,0.080,,885.40,2821.96,,,,,0.00,0.00,1.29,7174.44,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_ctrl_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V sds_ctrl_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_ctrl_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_ctrl_1.d" ,"1" ,2.752,2.771,2.833,8230.53,25697.69,100.00,100.00,100.00,0.052,,6501.24,2288.91,,,,,0.00,0.00,0.45,8509.24,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_ctrl_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V sds_ctrl_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_ctrl_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_ctrl_2.d" ,"1" ,2.747,2.763,2.845,7754.80,30759.90,100.00,100.00,100.00,0.066,,5593.42,3098.28,,,,,0.00,0.00,0.27,8131.15,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_ctrl_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V sds_ctrl_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_ctrl_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_ctrl_3.d" ,"1" ,2.707,2.754,2.834,7948.74,39348.08,100.00,100.00,100.00,0.066,,1118.27,2543.81,,,,,0.00,0.00,0.51,8464.10,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_neg_1.d"," -ESI EIC(456.1632) Scan Frag=175.0V sds_neg_1.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_neg_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_neg_1.d" ,"1" ,2.694,2.729,2.752,7529.67,14379.30,100.00,100.00,100.00,0.032,,515.03,5941.42,,,,,0.00,0.00,0.74,6403.61,,,  ,141.0136,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_neg_2.d"," -ESI EIC(456.1632) Scan Frag=175.0V sds_neg_2.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_neg_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_neg_2.d" ,"1" ,2.305,2.422,2.449,7354.69,39965.54,100.00,100.00,100.00,0.078,,1097.63,5548.45,,,,,0.00,0.00,2.98,7059.39,,,  ,156.9884,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_neg_3.d"," -ESI EIC(456.1632) Scan Frag=175.0V sds_neg_3.d "
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_neg_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\230425_mod1\sds_neg_3.d" ,"1" ,2.766,2.781,2.832,7003.75,19769.44,100.00,100.00,100.00,0.047,,4907.80,3698.99,,,,,0.00,0.00,0.37,6922.59,,,  ,141.0136,,,,,,,,,,,,
+
