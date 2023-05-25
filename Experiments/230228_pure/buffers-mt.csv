@@ -1,0 +1,7 @@
+﻿,Biotin,ATP,Mg-Act,HCT,Kan,formate,HCO3,NADH,PLP,Pyruvate,Serine,KOH,AMP,Glycine,"5,10-CH2-THF",acetyl-CoA,GFP,TdcB,glyA,Pyc
+TdcB,,,,10,1,,,,1,,1,,1,,,,,10,,
+TdcB_neg,,,,10,1,,,,1,,1,,1,,,,10,,,
+glyA,,,,10,1,,,,1,,,,,1,4,,,,10,
+glyA_neg,,,,10,1,,,,1,,,,,1,4,,10,,,
+Pyc,1,1,2,10,1,15,10,1,,1,,,,,,1,,,,10
+Pyc_neg,1,1,2,10,1,15,10,1,,1,,,,,,1,10,,,

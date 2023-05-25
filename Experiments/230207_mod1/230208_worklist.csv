@@ -1,0 +1,63 @@
+﻿Sample Name,Sample Position,Method,Data File
+TdcB_plus_1,P3-A1,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230208\TdcB_plus_1
+TdcB_plus_2,P3-A2,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\TdcB_plus_2
+TdcB_plus_3,P3-A3,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\TdcB_plus_3
+TdcB_neg_1,P3-A4,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\TdcB_neg_1
+TdcB_neg_2,P3-A5,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\TdcB_neg_2
+TdcB_neg_3,P3-A6,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\TdcB_neg_3
+glyA_plus_1,P3-A7,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\glyA_plus_1
+glyA_plus_2,P3-A8,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\glyA_plus_2
+glyA_plus_3,P3-A9,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\glyA_plus_3
+glyA_neg_1,P3-A10,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\glyA_neg_1
+glyA_neg_2,P3-A11,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\glyA_neg_2
+glyA_neg_3,P3-A12,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\glyA_neg_3
+blank_1,no injection,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\blank_1
+mod2_pos_1,P3-B7,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod2_pos_1
+mod2_pos_2,P3-B8,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod2_pos_2
+mod2_pos_3,P3-B9,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod2_pos_3
+mod2_neg_1,P3-B10,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod2_neg_1
+mod2_neg_2,P3-B11,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod2_neg_2
+mod2_neg_3,P3-B12,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod2_neg_3
+mod2_form_1,P3-d10,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod2_form_1
+mod2_form_2,P3-d11,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod2_form_2
+mod2_form_3,P3-d12,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod2_form_3
+mod1_pos_1,P3-b1,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod1_pos_1
+mod1_pos_2,P3-b2,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod1_pos_2
+mod1_pos_3,P3-b3,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod1_pos_3
+mod1_neg_1,P3-b4,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod1_neg_1
+mod1_neg_2,P3-b5,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod1_neg_2
+mod1_neg_3,P3-b6,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\mod1_neg_3
+blank_2,no injection,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\blank_2
+fdhAT_NADH_1,P3-D1,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fdhAT_NADH_1
+fdhAT_NADH_2,P3-D2,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fdhAT_NADH_2
+fdhAT_NADH_3,P3-D3,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fdhAT_NADH_3
+fdhSN_NADH_1,P3-D4,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fdhSN_NADH_1
+fdhSN_NADH_2,P3-D5,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fdhSN_NADH_2
+fdhSN_NADH_3,P3-D6,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fdhSN_NADH_3
+NADH_neg_1,P3-D7,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\NADH_neg_1
+NADH_neg_2,P3-D8,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\NADH_neg_2
+NADH_neg_3,P3-D9,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\NADH_neg_3
+fdhAT_NADPH_1,P3-e1,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fdhAT_NADPH_1
+fdhAT_NADPH_2,P3-e2,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fdhAT_NADPH_2
+fdhAT_NADPH_3,P3-e3,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fdhAT_NADPH_3
+fdhSN_NADPH_1,P3-e4,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fdhSN_NADPH_1
+fdhSN_NADPH_2,P3-e5,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fdhSN_NADPH_2
+fdhSN_NADPH_3,P3-e6,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fdhSN_NADPH_3
+NADPH_neg_1,P3-e7,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\NADPH_neg_1
+NADPH_neg_2,P3-e8,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\NADPH_neg_2
+NADPH_neg_3,P3-e9,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\NADPH_neg_3
+blank_3,no injection,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\blank_3
+ppk12_1,p3-c1,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\ppk12_1
+ppk12_2,p3-c2,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\ppk12_2
+ppk12_3,p3-c3,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\ppk12_3
+ppkMT_1,p3-c4,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\ppkMT_1
+ppkMT_2,p3-c5,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\ppkMT_2
+ppkMT_3,p3-c6,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\ppkMT_3
+ppkPA_1,p3-c7,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\ppkPA_1
+ppkPA_2,p3-c8,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\ppkPA_2
+ppkPA_3,p3-c9,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\ppkPA_3
+ppk_neg_1,p3-c10,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\ppk_neg_1
+ppk_neg_2,p3-c11,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\ppk_neg_2
+ppk_neg_3,p3-c12,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\ppk_neg_3
+fin,no injection,Carothers\BEHamide_A1B1_95to60organic.m,D:\Projects\Marchand\Data\Carothers\230117\fin
+script,,,

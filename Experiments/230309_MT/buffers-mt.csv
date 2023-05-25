@@ -1,0 +1,6 @@
+,Kan,PLP,Serine,AMP,Glycine,"5,10-CH2-THF",Rxn_A_Ctrl,Rxn_A_sds,Rxn_A_ilvA,Rxn_B_Ctrl,Rxn_B_glyA_Ht_l
+Rxn_A_Ctrl,1,1,1,1,,,10,,,,
+Rxn_A_sds,1,1,1,1,,,,10,,,
+Rxn_A_ilvA,1,1,1,1,,,,,10,,
+Rxn_B_Ctrl,1,1,,,1,4,,,,10,
+Rxn_B_glyA_Ht_l,1,1,,,1,4,,,,,10

@@ -1,0 +1,11 @@
+,Fdh,Mdh,Pyc,TdcB,PLP,biotin,ppk12,ppk_Pa,ppk_Mt,fch,ftl,mtdA,glyA,fdhAT ,gcvP,gcvT,gcvH,lpd,lplA
+TdcB_plus,,,,2,1,,,,,,,,,,,,,,
+neg,,,,,1,,,,,,,,,,,,,,
+glyA_plus,,,,,1,,,,,,,,2,,,,,,
+ppk12_plus,,,,,1,,2,,,,,,,,,,,,
+ppkMt_plus,,,,,1,,,,2,,,,,,,,,,
+ppkPa_plus,,,,,1,,,2,,,,,,,,,,,
+mod1_pos,,,,,1,,,,,1,1,2,,1,,,,,
+mod2_pos,1.5,,,,1,,,,,,,,,,1,1,4,1,2
+fdhAT,,,,,,,,,,,,,,2,,,,,
+fdhSN,2,,,,,,,,,,,,,,,,,,

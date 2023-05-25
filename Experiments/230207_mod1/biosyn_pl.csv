@@ -1,0 +1,9 @@
+﻿,1,2,3,4,5,6,7,8,9,10,11,12
+A,TdcB_plus,TdcB_plus,TdcB_plus,TdcB_neg,TdcB_neg,TdcB_neg,glyA_plus,glyA_plus,glyA_plus,glyA_neg,glyA_neg,glyA_neg
+B,mod1_pos,mod1_pos,mod1_pos,mod1_neg,mod1_neg,mod1_neg,mod2_pos,mod2_pos,mod2_pos,mod2_neg,mod2_neg,mod2_neg
+C,ppk12_plus,ppk12_plus,ppk12_plus,ppkMt_plus,ppkMt_plus,ppkMt_plus,ppkPa_plus,ppkPa_plus,ppkPa_plus,ppk_neg,ppk_neg,ppk_neg
+D,fdhAT_NADH,fdhAT_NADH,fdhAT_NADH,fdhSN_NADH,fdhSN_NADH,fdhSN_NADH,NADH_neg,NADH_neg,NADH_neg,mod2_form,mod2_form,mod2_form
+E,fdhAT_NADPH,fdhAT_NADPH,fdhAT_NADPH,fdhSN_NADPH,fdhSN_NADPH,fdhSN_NADPH,NADPH_neg,NADPH_neg,NADPH_neg,,,
+F,std_1,std_2,std_3,std_4,,,,,,,,
+G,,,,,,,,,,,,
+H,,,,,,,,,,,,
