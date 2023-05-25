@@ -1,60 +1,31 @@
 from whispr import *
-import os 
 
 """
 For user to change according to run
 """
-# gene expression. 2.5ul rxns, 75% txtl
-rxn_vol = 10
+
+#CSV file with source plate info. Columns are label, well, concentration, volume
+source_plate = 'Experiments/CRISPRa_degradation/230221_sp.xlsx'
+source_plate_df = pd.read_excel(source_plate, index_col = 0, convert_float = False)
+source_plate_df = source_plate_df[~source_plate_df['Well'].isna()]
+
+filename = '230217_pl.csv'
+# CSV file with output plate layout: columns labeled 1-12 and rows labeled A-H for 96 well plate
+output_layout = 'Experiments/CRISPRa_degradation/'+filename 
+output_plate = pd.read_csv(output_layout, index_col = 0, dtype = str)
+
+#CSV file with each reaction as rows and the volume of each input (columns) added to reach final reaction volume
+filename = '230217_mt.csv'
+mixing_table = 'Experiments/CRISPRa_degradation/'+filename 
+mixing_table_df = pd.read_csv(mixing_table, index_col = 0, dtype = str).fillna(0)
+
 source_plate_type = '384PP_AQ_BP' 
 
-os.getcwd()
-folder = os.getcwd() + '/Experiments/221213_ATP_regen/'
-sp_plasmids_file = folder + 'arpae_plasmids.xlsx'
-sp_plasmids = pd.read_excel(sp_plasmids_file, index_col = 0)
-sp_plasmids = sp_plasmids[~sp_plasmids['Well'].isna()]
+checkInputs(source_plate_df, mixing_table_df,source_plate_type)
 
-layout_genex_file = folder + 'atp-regen-genex-pl.csv'
-layout_genex = pd.read_csv(layout_genex_file, index_col = 0, dtype = str)
+vol_table_df = generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 50, total_vol = 50, fill_with=False)
 
-mt_genex_file = folder + 'atp-regen-genex-mt.csv'
-mt_genex = pd.read_csv(mt_genex_file, index_col = 0, dtype = str).fillna(0)
-
-# biosynthesis. 25ul rxns, 2.5ul of diluted txtl
-
-# buffer source plate
-sp_buffers_file = folder + 'UPDATE_buffers_sp.xlsx'
-sp_buffers= pd.read_excel(sp_buffers_file, index_col = 0)
-sp_buffers = sp_buffers[~sp_buffers['Well'].isna()]
-
-# HEPES reservoir (actually same plate as Tris)
-sp_hepes = pd.DataFrame(columns=sp_buffers.columns)
-sp_hepes = sp_hepes.append({'Label':'HEPES', 'Well':'A2,A3', 'Concentration':'', 'Volume':'2000,2000'}, ignore_index = True)
-
-# gene expression source plate (diluted w/ Tris)
-sp_genex = sp_from_layout(layout_genex, 60)
-
-# group source plates
-sp_types = ['384PP_AQ_BP','6RES_AQ_BP2','384PP_AQ_BP'] # triple check this
-sps = [sp_buffers,sp_hepes,sp_genex]
-
-# get mixing table
-mt_biosyn_file = folder + 'atp-regen-buffers-mt.csv'
-mt_biosyn = pd.read_csv(mt_biosyn_file, index_col = 0, dtype = str).fillna(0)
-
-# check formats
-checkInputs(sps,mt_biosyn,sp_types)
-
-# layouts for destination plate(s)
-layout_biosyn1_file = folder + 'biosyn_pl.csv' 
-layout_biosyn1 = pd.read_csv(layout_biosyn1_file, index_col = 0, dtype = str)
-# filename = '221018_arpae_biosyn_neg.csv'
-# layout_biosyn2_file = 'plate_layouts/'+filename 
-# layout_biosyn2 = pd.read_csv(layout_biosyn2_file, index_col = 0, dtype = str)
-# layouts = [layout_biosyn1,layout_biosyn2]
-
-vol_table_df = generateVolumeTable(mt_biosyn, sps, rxn_vol = 22.5, total_vol = 25, fill_with='HEPES')
-
-protocol_biosyn_dfs = writeProtocol(sp_types, vol_table_df, layout_biosyn1,sps, update_source_vol= folder +'combined_sp_updated.xlsx')
-
-#protocol_biosyn_df.to_csv('protocols/221018_arpae_biosyn.csv',index = False)
+#specify rxn_vol (default = 2.5) and total_vol (default = 10) if you'd like to change the volume of each individual replicate or the total reaction volume
+filename = '230221_ep.csv'
+output_df = writeProtocol(source_plate_type, vol_table_df, output_plate,source_plate_df)[0]
+output_df.to_csv('Experiments/CRISPRa_degradation/'+filename,index = False)
