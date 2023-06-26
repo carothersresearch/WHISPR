@@ -117,13 +117,19 @@ def generateVolumeTable(mixing_table_df, source_plate_df, rxn_vol = 2.5, total_v
             conc_to_add = float(mixing_table_df.loc[row][column])
             label_indx = 0
             conc_of_source = running_source_plate.loc[column]['Concentration']
-            if ( (type(conc_of_source) != np.float64) and (type(conc_of_source) != float) and (type(conc_of_source) != int)):
-                while (running_source_plate.loc[column].sort_values(ascending = False, by = 'Concentration')['Volume'][label_indx] <= min_well_vol):
+            if (type(conc_of_source) != np.float64) and (type(conc_of_source) != float):
+                dummy_bool = True
+                try:
+                    dummy_bool = running_source_plate.loc[column].sort_values(ascending = False, by = 'Concentration')['Volume'][label_indx] <= min_well_vol
+                except:
+                    dummy_bool = False
+                while dummy_bool:
                     label_indx += 1
-                else: 
-                    print(type(conc_of_source))
-                    conc_of_source = conc_of_source.sort_values(ascending = False)[label_indx]
-                    
+                else:
+                    try:
+                        conc_of_source = conc_of_source.sort_values(ascending = False)[label_indx]
+                    except:
+                        pass
             #conc_of_source = source_plate_df[source_plate_df['Label'] == column]['Concentration'].sort_values(ascending = False)[label_indx]
             vol_to_add = myround(total_vol*conc_to_add/conc_of_source)
             # this may round to zero, so need to check for more dilute wells 
