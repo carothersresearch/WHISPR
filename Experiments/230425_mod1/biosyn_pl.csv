@@ -1,0 +1,9 @@
+﻿,1,2,3,4,5,6,7,8,9,10,11,12
+A,mdh_ctrl,mdh_ctrl,mdh_ctrl,mod1_fdh,mod1_fdh,mod1_fdh,glyA,glyA,glyA,,,
+B,mdh_neg,mdh_neg,mdh_neg,mod1_glyA_neg,mod1_glyA_neg,mod1_glyA_neg,glyA_neg,glyA_neg,glyA_neg,,,
+C,pyc_ctrl,pyc_ctrl,pyc_ctrl,mod1_glyA,mod1_glyA,mod1_glyA,glyA_sds,glyA_sds,glyA_sds,,,
+D,pyc_neg,pyc_neg,pyc_neg,mod1_sds,mod1_sds,mod1_sds,glyA_sds_neg,glyA_sds_neg,glyA_sds_neg,,,
+E,sds_ctrl,sds_ctrl,sds_ctrl,mod1_sds_neg,mod1_sds_neg,mod1_sds_neg,mod3,mod3,mod3,,,
+F,sds_neg,sds_neg,sds_neg,,,,mod3_neg,mod3_neg,mod3_neg,,,
+G,mod1_ctrl,mod1_ctrl,mod1_ctrl,,,,,,,,,
+H,mod1_neg,mod1_neg,mod1_neg,,,,,,,,,

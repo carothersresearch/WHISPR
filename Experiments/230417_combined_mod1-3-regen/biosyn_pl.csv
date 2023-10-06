@@ -1,0 +1,9 @@
+﻿,1,2,3,4,5,6,7,8,9,10,11,12
+A,mod3_ctrl,mod3_ctrl,mod3_ctrl,,sds,sds,sds,,fdh-ctrl,fdh-ctrl,fdh-ctrl,std_1
+B,mod3_new,mod3_new,mod3_new,,mod3_ctrl_ATP,mod3_ctrl_ATP,mod3_ctrl_ATP,,fdh-NADP,fdh-NADP,fdh-NADP,std_2
+C,mod3_no_sds,mod3_no_sds,mod3_no_sds,,mod3_new_ATP,mod3_new_ATP,mod3_new_ATP,,fdh-substrate,fdh-substrate,fdh-substrate,std_3
+D,mod3_no_pyc,mod3_no_pyc,mod3_no_pyc,,mod3_gly_ctrl_ATP,mod3_gly_ctrl_ATP,mod3_gly_ctrl_ATP,,fdh-mod1,fdh-mod1,fdh-mod1,std_4
+E,mod3_mod1,mod3_mod1,mod3_mod1,,glyA_ATP,glyA_ATP,glyA_ATP,,fdh-mod1-NADP,fdh-mod1-NADP,fdh-mod1-NADP,std_5
+F,glyA_ctrl,glyA_ctrl,glyA_ctrl,,ppk12-ctrl,ppk12-ctrl,ppk12-ctrl,,mod3_ilvA,mod3_ilvA,mod3_ilvA,mod3_ilvA_gly_ATP
+G,tdcb_ctrl,tdcb_ctrl,tdcb_ctrl,,ppk12-substrate,ppk12-substrate,ppk12-substrate,,mod3_mod1_ilvA,mod3_mod1_ilvA,mod3_mod1_ilvA,mod3_ilvA_gly_ATP
+H,ilvA,ilvA,ilvA,,ppk12-mod1,ppk12-mod1,ppk12-mod1,,mod3_ilvA_ATP,mod3_ilvA_ATP,mod3_ilvA_ATP,mod3_ilvA_gly_ATP

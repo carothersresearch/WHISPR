@@ -1,0 +1,9 @@
+﻿,1,2,3,4,5,6,7,8,9,10,11,12
+A,mex,mex,mex_fdh,mex_fdh,fdh_neg,mod3_1_ctrl,mod3_1_ctrl,std_1,,,,
+B,woodii,woodii,woodii_fdh,woodii_fdh,fdh_neg,mod3_1_neg,mod3_1_neg,std_2,,,,
+C,auto,auto,auto_fdh,auto_fdh,,mod3_2_ctrl,mod3_2_ctrl,std_3,,,,
+D,pross,pross,pross_fdh,pross_fdh,,mod3_2_neg,mod3_2_neg,std_4,,,,
+E,mod1_neg,mod1_neg,fdh_ctrl,fdh_ctrl,,mod3_full_ctrl,mod3_full_ctrl,,,,,
+F,,,,,,mod3_full_neg,mod3_full_neg,,,,,
+G,,,,,,,,,,,,
+H,,,,,,,,,,,,
