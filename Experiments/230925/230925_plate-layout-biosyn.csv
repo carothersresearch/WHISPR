@@ -1,0 +1,9 @@
+﻿,1,2,3,4,5,6,7,8,9,10,11,12
+A,mod1_nadh_CA,mod1_nadh_CA,mod1_nadh_CA,mod1_nadph_CA,mod1_nadph_CA,mod1_nadph_CA,mod1_nadph_neg,mod1_nadph_neg,mod1_nadph_neg,metf_nadh_neg,metf_nadh_neg,metf_nadh_neg
+B,mod1_nadh_AW,mod1_nadh_AW,mod1_nadh_AW,mod1_nadph_AW,mod1_nadph_AW,mod1_nadph_AW,mod1_nadh_neg,mod1_nadh_neg,mod1_nadh_neg,metf_nadh_FAD_neg,metf_nadh_FAD_neg,metf_nadh_FAD_neg
+C,metf_nadh_CA,metf_nadh_CA,metf_nadh_CA,metf_nadh_FAD_CA,metf_nadh_FAD_CA,metf_nadh_FAD_CA,metf_nadph_neg,metf_nadph_neg,metf_nadph_neg,sds_RC,sds_RC,sds_RC
+D,metf_nadh_AW,metf_nadh_AW,metf_nadh_AW,metf_nadh_FAD_AW,metf_nadh_FAD_AW,metf_nadh_FAD_AW,metf_nadph_FAD_neg,metf_nadph_FAD_neg,metf_nadph_FAD_neg,sds_magic,sds_magic,sds_magic
+E,metf_nadph_CA,metf_nadph_CA,metf_nadph_CA,metf_nadph_FAD_CA,metf_nadph_FAD_CA,metf_nadph_FAD_CA,,,,sds_linear,sds_linear,sds_linear
+F,metf_nadph_AW,metf_nadph_AW,metf_nadph_AW,metf_nadph_FAD_AW,metf_nadph_FAD_AW,metf_nadph_FAD_AW,,,,sds_neg,sds_neg,sds_neg
+G,,,,,,,,,,,,
+H,Std_1,Std_2,Std_3,Std_4,Std_5,,,,,,,

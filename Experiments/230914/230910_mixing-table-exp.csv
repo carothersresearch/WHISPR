@@ -1,0 +1,9 @@
+﻿,sds_RC,sds_magic,sds_linear,acc_RC,ACCa_plasmid,ACCb_plasmid,ACCd_plasmid,ACCa_linear,ACCb_linear,ACCc_linear,ACCd_linear,GamS,Chi6
+sds_RC,2.5,,,,,,,,,,,,
+sds_magic,,2.5,,,,,,,,,,,
+sds_linear,,,2.5,,,,,,,,,2.5,3
+acc_RC,,,,2.5,,,,,,,,,
+ACC_plasmids,,,,,2.5,2.5,2.5,,,2.5,,2.5,3
+ACC_linear,,,,,,,,2.5,2.5,2.5,2.5,2.5,3
+neg,,,,,,,,,,,,,
+Std,,,,,,,,,,,,,
