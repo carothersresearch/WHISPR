@@ -1,0 +1,27 @@
+Source Plate Name,Source Plate Type,Source Well,Destination Plate Name,Destination Well,Transfer Volume
+Source[1],384PP_AQ_BP,A1,Destination[1],A1,2500.0
+Source[1],384PP_AQ_BP,A1,Destination[1],C1,1525.0
+Source[1],384PP_AQ_BP,A2,Destination[1],C1,250.0
+Source[1],384PP_AQ_BP,A3,Destination[1],C1,375.0
+Source[1],384PP_AQ_BP,A4,Destination[1],C1,200.0
+Source[1],384PP_AQ_BP,A6,Destination[1],C1,150.0
+Source[1],384PP_AQ_BP,A1,Destination[1],C2,1525.0
+Source[1],384PP_AQ_BP,A2,Destination[1],C2,250.0
+Source[1],384PP_AQ_BP,A3,Destination[1],C2,375.0
+Source[1],384PP_AQ_BP,A4,Destination[1],C2,200.0
+Source[1],384PP_AQ_BP,A9,Destination[1],C2,150.0
+Source[1],384PP_AQ_BP,A1,Destination[1],C3,1525.0
+Source[1],384PP_AQ_BP,A2,Destination[1],C3,250.0
+Source[1],384PP_AQ_BP,A3,Destination[1],C3,375.0
+Source[1],384PP_AQ_BP,A4,Destination[1],C3,200.0
+Source[1],384PP_AQ_BP,A10,Destination[1],C3,150.0
+Source[1],384PP_AQ_BP,A1,Destination[1],C4,1525.0
+Source[1],384PP_AQ_BP,A2,Destination[1],C4,250.0
+Source[1],384PP_AQ_BP,A3,Destination[1],C4,375.0
+Source[1],384PP_AQ_BP,A4,Destination[1],C4,200.0
+Source[1],384PP_AQ_BP,A11,Destination[1],C4,150.0
+Source[1],384PP_AQ_BP,B24,Destination[1],A1,7500.0
+Source[1],384PP_AQ_BP,B24,Destination[1],C1,7500.0
+Source[1],384PP_AQ_BP,B24,Destination[1],C2,7500.0
+Source[1],384PP_AQ_BP,B24,Destination[1],C3,7500.0
+Source[1],384PP_AQ_BP,B24,Destination[1],C4,7500.0

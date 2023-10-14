@@ -1,0 +1,64 @@
+sds_linear_1, -ESI EIC(104.0347) Scan Frag=175.0V sds_linear_1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_linear_1,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+sds_linear_1,1,4.259,4.315,4.531,333537.06,1736252.24,100,100,91.34,0.272,0.081,3655.57,8276.72,4.215,4.215,4.548,4.581,3655.57,8276.72,3.47,338139.78,,,  ,104.0318,,,,,,,,,,,
+sds_linear_1,2,4.583,4.62,4.675,15355.86,49029.69,2.82,4.6,2.58,0.092,0.058,5411.64,8358.8,4.548,4.581,4.664,4.714,5411.64,4391.81,2.72,20363.29,,,  ,236.8598,,,,,,,,,,,
+sds_linear_1,3,4.675,4.769,4.9,12347.42,115599.57,6.66,3.7,6.08,0.225,0.18,8358.8,1893.74,4.664,4.714,4.902,5.295,4391.81,1893.74,1.21,15693.01,,,  ,248.9632,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_linear_2, -ESI EIC(104.0347) Scan Frag=175.0V sds_linear_2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_linear_2,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+sds_linear_2,1,4.258,4.329,4.545,290137.13,1469889.84,100,100,86.61,0.287,0.076,559.43,4314.59,0.551,4.224,4.528,4.567,559.43,414.84,2.83,290660.88,,,  ,104.0318,,,,,,,,,,,
+sds_linear_2,2,4.545,4.628,4.678,22148.86,102703.27,6.99,7.63,6.05,0.133,0.135,4314.59,6278.56,4.528,4.567,4.667,4.733,414.84,347.82,1.06,22521.81,,,  ,248.9632,,,,,,,,,,,
+sds_linear_2,3,4.678,4.739,4.894,15245.89,124579.97,8.48,5.25,7.34,0.216,0.201,6278.56,239,4.667,4.733,4.894,5.248,347.82,239,2.13,15562.99,,,  ,248.9632,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_linear_3, -ESI EIC(104.0347) Scan Frag=175.0V sds_linear_3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_linear_3,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+sds_linear_3,1,4.247,4.308,4.59,315996.99,1906282.22,100,100,89.73,0.343,0.09,1945.14,3896.62,2.247,4.208,4.546,4.613,985.73,620.18,4.28,316917.88,,,  ,104.0318,,,,,,,,,,,
+sds_linear_3,2,4.59,4.651,4.69,16643.24,61718.24,3.24,5.27,2.91,0.1,0.074,3896.62,8706.17,4.546,4.613,4.673,4.718,620.18,514.06,0.63,17198.58,,,  ,248.9632,,,,,,,,,,,
+sds_linear_3,3,4.69,4.79,4.904,16989.92,156453.62,8.21,5.38,7.36,0.214,0.196,8706.17,285.87,4.673,4.718,4.901,5.272,514.06,285.87,0.93,17397.85,,,  ,248.9632,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_magic_1, -ESI EIC(104.0347) Scan Frag=175.0V sds_magic_1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_magic_1,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+sds_magic_1,1,4.239,4.311,4.577,337834.28,1848859.85,100,100,90.25,0.337,0.081,1424.86,3071.31,0.555,4.233,4.538,4.599,1424.86,1147.95,3.79,339200.63,,,  ,104.0318,,,,,,,,,,,
+sds_magic_1,2,4.577,4.638,4.682,16467.89,60058.73,3.25,4.87,2.93,0.105,0.1,3071.31,6822.16,4.538,4.599,4.671,4.71,1232.89,1069.91,0.72,17606.4,,,  ,248.9632,,,,,,,,,,,
+sds_magic_1,3,4.682,4.748,4.907,14695.67,139720.26,7.56,4.35,6.82,0.225,0.203,6822.16,721.09,4.671,4.71,4.909,5.225,1069.91,721.09,1.99,15662.63,,,  ,248.9632,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_magic_2, -ESI EIC(104.0347) Scan Frag=175.0V sds_magic_2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_magic_2,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+sds_magic_2,1,4.253,4.319,4.557,354907.63,1794938.58,100,100,89.72,0.305,0.073,2952.02,3853.02,0.553,4.192,4.541,4.596,1060.72,737.87,3.34,355897.91,,,  ,104.0318,,,,,,,,,,,
+sds_magic_2,2,4.557,4.635,4.701,17896.66,83232.82,4.64,5.04,4.16,0.144,0.117,3853.02,6620.4,4.541,4.596,4.674,4.718,737.87,585.26,0.88,18552.36,,,  ,248.9632,,,,,,,,,,,
+sds_magic_2,3,4.701,4.746,4.909,14715.04,122496.62,6.82,4.15,6.12,0.207,0.197,6620.4,365.59,4.674,4.718,4.906,5.155,585.26,365.59,2.18,15253.34,,,  ,248.9632,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_magic_3, -ESI EIC(104.0347) Scan Frag=175.0V sds_magic_3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_magic_3,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+sds_magic_3,1,4.25,4.315,4.525,330653.63,1823927.66,100,100,89.87,0.275,0.089,2671.13,8530.94,2.237,4.198,4.553,4.608,2671.13,8530.94,2.77,334701.31,,,  ,104.0318,,,,,,,,,,,
+sds_magic_3,2,4.58,4.758,4.905,17376.93,205574.36,11.27,5.26,10.13,0.324,0.195,3494.04,1822.85,4.663,4.697,4.907,5.273,1715.48,1822.85,1.52,19151.11,,,  ,248.9632,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_neg_1, -ESI EIC(104.0347) Scan Frag=175.0V sds_neg_1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_neg_1,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+sds_neg_1,1,4.254,4.325,4.553,322335.82,1944311.79,100,100,92.87,0.298,0.093,2888.24,5716.45,0.553,4.187,4.553,4.619,2888.24,5347.66,2.29,325812.44,,,  ,104.0318,,,,,,,,,,,
+sds_neg_1,2,4.691,4.763,4.897,15455.85,149342.41,7.68,4.79,7.13,0.206,0.206,9281.05,2475.68,4.663,4.708,4.902,5.178,2385.33,2475.68,1.33,17872.74,,,  ,248.9632,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_neg_2, -ESI EIC(104.0347) Scan Frag=175.0V sds_neg_2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_neg_2,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+sds_neg_2,1,4.263,4.318,4.53,309842.74,1620375.86,100,100,91.14,0.268,0.084,3142.41,6732.55,0.551,4.196,4.528,4.583,3142.41,6732.55,3.87,313722.75,,,  ,104.0318,,,,,,,,,,,
+sds_neg_2,2,4.581,4.639,4.678,13189.54,44202.8,2.73,4.26,2.49,0.096,0.057,7404.01,9483.23,4.528,4.583,4.661,4.744,7404.01,8713.62,0.75,21376.72,,,  ,248.9632,,,,,,,,,,,
+sds_neg_2,3,4.678,4.761,4.896,13180.98,113313.08,6.99,4.25,6.37,0.219,0.212,9483.23,2920.4,4.661,4.744,4.899,5.243,2829.75,2920.4,1.35,16045.13,,,  ,248.9632,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_neg_3, -ESI EIC(104.0347) Scan Frag=175.0V sds_neg_3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_neg_3,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+sds_neg_3,1,4.255,4.315,4.564,320463.58,1877199.69,100,100,89.44,0.309,0.095,2822.26,6352.69,2.226,4.215,4.553,4.608,2822.26,5659.78,3.28,323834.63,,,  ,104.0318,,,,,,,,,,,
+sds_neg_3,2,4.586,4.813,4.901,17691.69,221600.8,11.8,5.52,10.56,0.315,0.205,3559.95,1421.68,4.653,4.708,4.902,5.262,1349.56,1421.68,0.53,19093.22,,,  ,248.9632,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_RC_1, -ESI EIC(104.0347) Scan Frag=175.0V sds_RC_1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_RC_1,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+sds_RC_1,1,4.242,4.302,4.555,311654.6,1786216.88,100,100,97.84,0.313,0.08,2424.09,5143.48,2.263,4.23,4.551,4.606,2424.09,5143.48,3.85,314599.84,,,  ,104.0318,,,,,,,,,,,
+sds_RC_1,2,4.689,4.734,4.838,8106.82,39399.01,2.21,2.6,2.16,0.149,0.103,9715.31,9286.76,4.656,4.706,4.917,4.972,9715.31,9286.76,2.96,17694.64,,,  ,134.0404,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_RC_2, -ESI EIC(104.0347) Scan Frag=175.0V sds_RC_2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_RC_2,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+sds_RC_2,1,4.244,4.299,4.562,338456.7,1973479.97,100,100,100,0.319,0.083,1679.36,5179.99,2.216,4.227,4.548,4.614,1679.36,5179.99,3.9,340740.13,,,  ,104.0318,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_RC_3, -ESI EIC(104.0347) Scan Frag=175.0V sds_RC_3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+sds_RC_3,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+sds_RC_3,1,4.228,4.299,4.587,345301.54,2006299.48,100,100,90.74,0.36,0.082,112.93,2364.92,2.25,4.227,4.56,4.615,112.93,112.93,3.59,345414.47,,,  ,104.0318,,,,,,,,,,,
+sds_RC_3,2,4.587,4.759,4.913,17533.77,204661.16,10.2,5.08,9.26,0.325,0.267,2364.92,112.93,4.56,4.615,4.909,5.185,112.93,112.93,0.73,17646.7,,,  ,248.9632,,,,,,,,,,,
