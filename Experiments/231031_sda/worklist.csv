@@ -1,0 +1,17 @@
+Sample Name,Sample Position,Method,Data File
+sds_amp_1,P3-F1,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/sds_amp_1
+sds_neg_1,P3-F2,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/sds_neg_1
+tdcB_amp_1,P3-F3,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/tdcB_amp_1
+tdcB_neg_1,P3-F4,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/tdcB_neg_1
+Msmeg_amp_1,P3-F5,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/Msmeg_amp_1
+Msmeg_neg_1,P3-F6,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/Msmeg_neg_1
+neg_amp_1,P3-F7,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/neg_amp_1
+neg_neg_1,P3-F8,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/neg_neg_1
+sds_amp_2,P3-G1,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/sds_amp_2
+sds_neg_2,P3-G2,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/sds_neg_2
+tdcB_amp_2,P3-G3,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/tdcB_amp_2
+tdcB_neg_2,P3-G4,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/tdcB_neg_2
+Msmeg_amp_2,P3-G5,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/Msmeg_amp_2
+Msmeg_neg_2,P3-G6,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/Msmeg_neg_2
+neg_amp_2,P3-G7,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/neg_amp_2
+neg_neg_2,P3-G8,Carothers/BEH_amide_A2B2_95to60organic.m,D:/Projects/Marchand/Data/Carothers/231031_sda/neg_neg_2

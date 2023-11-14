@@ -1,0 +1,11 @@
+Source Plate Name,Source Plate Type,Source Well,Destination Plate Name,Destination Well,Transfer Volume
+Source[1],384PP_AQ_BP,A1,Destination[1],F20,150.0
+Source[1],384PP_AQ_BP,P13,Destination[1],F20,475.0
+Source[1],384PP_AQ_BP,M8,Destination[1],F20,125.0
+Source[1],384PP_AQ_BP,P13,Destination[1],F21,475.0
+Source[1],384PP_AQ_BP,P15,Destination[1],F21,150.0
+Source[1],384PP_AQ_BP,M8,Destination[1],F21,125.0
+Source[1],384PP_AQ_BP,A1,Destination[1],F22,750.0
+Source[1],384PP_AQ_BP,E8,Destination[1],F20,2250.0
+Source[1],384PP_AQ_BP,E8,Destination[1],F21,2250.0
+Source[1],384PP_AQ_BP,E8,Destination[1],F22,2250.0

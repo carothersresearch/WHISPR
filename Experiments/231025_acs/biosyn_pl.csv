@@ -1,0 +1,10 @@
+﻿,1,2,3,4,5,6,7,8,9,10,11,12
+A,,,,,,,,,,,,
+B,,,,,,,,,,,,
+C,,,,,,,,,,neg_3,neg_3,neg_3
+D,,,,,,,,,,neg_4,neg_4,neg_4
+E,,,,,,,,,,neg_5,neg_5,neg_5
+F,acs_1,acs_1,acs_1,acs_4,acs_4,acs_4,acs_ppk_2,acs_ppk_2,acs_ppk_2,acs_ppk_5,acs_ppk_5,acs_ppk_5
+G,acs_2,acs_2,acs_2,acs_5,acs_5,acs_5,acs_ppk_3,acs_ppk_3,acs_ppk_3,neg_1,neg_1,neg_1
+H,acs_3,acs_3,acs_3,acs_ppk_1,acs_ppk_1,acs_ppk_1,acs_ppk_4,acs_ppk_4,acs_ppk_4,neg_2,neg_2,neg_2
+,acs_4,,,,,,,,,,,
