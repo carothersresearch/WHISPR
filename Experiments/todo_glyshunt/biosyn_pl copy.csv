@@ -1,9 +1,0 @@
-﻿,1,2,3,4,5,6,7,8,9,10,11,12
-A,mod3,mod3,mod3_ppk,mod3_ppk,,,,,,,,
-B,mod3_neg,mod3_neg,mod3_ppk_neg,mod3_ppk_neg,,,,,,,,
-C,mod3_acs,mod3_acs,ppk,ppk,,,,,,,,
-D,mod3_acs_neg,mod3_acs_neg,ppk_neg,ppk_neg,,,,,,,,
-E,acs,acs,mod3_ppk_acs,mod3_ppk_acs,,,,,,,,
-F,acs_neg,acs_neg,mod3_ppk_acs_neg,mod3_ppk_acs_neg,,,,,,,,
-G,neg,neg,mod3_gly_shunt,mod3_gly_shunt,,,,,,,,
-H,mod3_empty,mod3_empty,,,,,,,,,,

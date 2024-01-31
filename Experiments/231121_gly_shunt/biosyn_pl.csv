@@ -1,0 +1,9 @@
+﻿,1,2,3,4,5,6,7,8,9,10,11,12
+A,,,,,pyc,pyc,ms,ms,pyc_UNDIL,pyc_UNDIL,,
+B,,,,,pyc_neg,pyc_neg,ms_neg,ms_neg,pyc_neg_UNDIL,pyc_neg_UNDIL,,
+C,,,,,pyc_noHCT,pyc_noHCT,icl,icl,pyc_noHCT_UNDIL,pyc_noHCT_UNDIL,,
+D,,,,,pyc_noHCT_neg,pyc_noHCT_neg,icl_neg,icl_neg,pyc_noHCT_neg_UNDIL,pyc_noHCT_neg_UNDIL,,
+E,,,,,pyc_gly_shunt,pyc_gly_shunt,pyc_acs,pyc_acs,,,,
+F,,,,,gly_shunt,gly_shunt,pyc_acs_neg,pyc_acs_neg,,,,
+G,,,,,gly_shunt_neg,gly_shunt_neg,sds,sds,,,,
+H,,,,,,,sds_neg,sds_neg,,,,

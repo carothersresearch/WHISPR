@@ -1,0 +1,13 @@
+﻿,1,2,3,4,5,6,7,8,9,10,11,12
+A,neg,neg,neg,,sds,sds,sds,,,,,
+B,pyc,pyc,pyc,,sds_neg,sds_neg,sds_neg,,,,,
+C,HCT,HCT,HCT,,MS,MS,MS,,,,,
+D,pyc_HCT,pyc_HCT,pyc_HCT,,MS_neg,MS_neg,MS_neg,,,,,
+E,dil,dil,dil,,ICL,ICL,ICL,,,,,
+F,pyc_dil,pyc_dil,pyc_dil,,ICL_neg,ICL_neg,ICL_neg,,,,,
+G,HCT_dil,HCT_dil,HCT_dil,,ppk,ppk,ppk,,,,,
+H,pyc_HCT_dil,pyc_HCT_dil,pyc_HCT_dil,,ppk_neg,ppk_neg,ppk_neg,,,,,
+,,,,,,,,,,,,
+,"6 undiluted rxns, 6 diluted rxns =",,,,,,,,,,,
+,20ul,PYC + NEG,,,,,,,,,,
+,10ul everything else,,,,,,,,,,,

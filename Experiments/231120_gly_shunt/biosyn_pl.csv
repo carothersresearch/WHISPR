@@ -1,0 +1,9 @@
+﻿,1,2,3,4,5,6,7,8,9,10,11,12
+A,,,,,,,sds_plp,sds_plp,acs,acs,mod3,mod3
+B,,,,,,,sds,sds,acs_m3,acs_m3,neg,neg
+C,,,,,,,sds_plp_neg,sds_plp_neg,acs_neg,acs_neg,ppk2,ppk2
+D,,,,,,,sds_neg,sds_neg,gly_shunt,gly_shunt,ppk_neg,ppk_neg
+E,,,,,,,pyc,pyc,gly_shunt_neg,gly_shunt_neg,ppk-noMg,ppk-noMg
+F,,,,,,,pyc_neg,pyc_neg,gly_shunt_acs,gly_shunt_acs,ppk-noMg_neg,ppk-noMg_neg
+G,,,,,,,pyc_b,pyc_b,gly_shunt_acs_neg,gly_shunt_acs_neg,,
+H,,,,,,,pyc_b_neg,pyc_b_neg,,,,
