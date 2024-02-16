@@ -1,0 +1,9 @@
+﻿,1,2,3,4,5,6,7,8,9,10,11,12
+A,fdh_sn_nad,fdh_sn_nad,,,neg_mod1_4hr,neg_mod1_4hr,,neg_mod1_8hr,neg_mod1_8hr,,pyc_aa_CoA,pyc_aa_CoA
+B,fdh_cm_nad,fdh_cm_nad,,,mod1_4hr,mod1_4hr,,mod1_8hr,mod1_8hr,,pyc_re_CoA,pyc_re_CoA
+C,neg_nad,neg_nad,,,neg_mod3_4hr,neg_mod3_4hr,,neg_mod3_8hr,neg_mod3_8hr,,pyc_neg_CoA,pyc_neg_CoA
+D,fdh_sn_nadp,fdh_sn_nadp,,,glyA_4hr,glyA_4hr,,glyA_8hr,glyA_8hr,,pyc_aa_blank,pyc_aa_blank
+E,fdh_cm_nadp,fdh_cm_nadp,,,sds_4hr,sds_4hr,,sds_8hr,sds_8hr,,pyc_re_blank,pyc_re_blank
+F,neg_nadp,neg_nadp,,,pyc_4hr,pyc_4hr,,pyc_8hr,pyc_8hr,,pyc_neg_blank,pyc_neg_blank
+G,,,,,,,,,,,,
+H,,,,,,,,,,,,
