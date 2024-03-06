@@ -2,7 +2,7 @@
 A,sds,sds_neg,sds_kan,sds_kan_neg,mod3,mod3_neg,mod3-1,mod3-1_neg,mod3-shunt,mod3-shunt_neg,,
 B,sds,sds_neg,sds_kan,sds_kan_neg,mod3,mod3_neg,mod3-1,mod3-1_neg,mod3-shunt,mod3-shunt_neg,,
 C,sds,sds_neg,sds_kan,sds_kan_neg,mod3,mod3_neg,mod3-1,mod3-1_neg,mod3-shunt,mod3-shunt_neg,,
-D,,,,,,,,,,,,
+D,,,,,mod3,,mod3-1,mod3-1_neg,mod3-shunt,mod3-shunt_neg,,
 E,,,,,,,,,,,,
 F,,,,,,,,,,,,
 G,,,,,,,,,,,,
