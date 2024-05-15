@@ -1,0 +1,33 @@
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_0.d"," -ESI EIC(115.0031) Scan Frag=175.0V STD_0.d "
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_0.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_0.d" ,"1" ,0.847,0.867,0.883,1241.54,1628.99,3.33,79.35,2.94,0.022,,3880.34,3088.32,,,,,3533.75,2288.17,0.57,3928.92,,,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_0.d" ,"2" ,0.883,0.890,0.949,1564.71,3686.55,7.54,100.00,6.66,0.039,,3088.32,0.00,,,,,2288.17,0.00,0.16,3705.22,,,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_0.d" ,"3" ,0.949,0.964,0.982,1562.02,1142.04,2.34,99.83,2.06,0.012,,0.00,0.00,,,,,0.00,-179.47,0.92,1594.25,,,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_0.d" ,"4" ,0.982,0.999,1.502,1041.13,48899.99,100.00,66.54,88.33,0.783,,0.00,0.00,,,,,-179.47,-2981.48,0.01,0.00,,,  ,248.9683,,,,,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_1.d"," -ESI EIC(115.0031) Scan Frag=175.0V STD_1.d "
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_1.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_1.d" ,"1" ,3.608,4.073,4.965,73044,1655684,100.00,100.00,100.00,1.357,,0,8130,0,4508,,74589,,3.72,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_2.d"," -ESI EIC(115.0031) Scan Frag=175.0V STD_2.d "
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_2.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_2.d" ,"1" ,0.862,0.881,0.895,607.16,277.30,0.00,0.03,0.00,0.008,,0.00,0.00,,,,,0.00,0.00,1.13,0.00,,0.03,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_2.d" ,"2" ,0.895,0.947,0.961,565.10,253.09,0.00,0.03,0.00,0.007,,0.00,0.00,,,,,0.00,0.00,1.09,0.00,,0.03,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_2.d" ,"3" ,3.575,3.664,4.185,1846412.89,11453231.12,100.00,100.00,100.00,0.609,,1006.44,72125.41,,,,,1006.44,72125.41,,1857763.13,,93.93,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_3.d"," -ESI EIC(115.0031) Scan Frag=175.0V STD_3.d "
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_3.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_3.d" ,"1" ,0.837,0.856,0.874,1279.58,765.12,0.01,0.07,0.01,0.010,,0.00,0.00,,,,,435.00,0.00,1.10,1115.17,,0.07,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_3.d" ,"2" ,0.874,0.890,0.907,966.74,604.04,0.00,0.05,0.00,0.010,,0.00,0.00,,,,,0.00,0.00,0.99,1103.60,,0.05,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_3.d" ,"3" ,0.907,0.929,0.943,608.87,603.24,0.00,0.03,0.00,0.020,,0.00,0.00,,,,,0.00,0.00,1.61,894.01,,0.03,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_3.d" ,"4" ,1.195,1.214,1.228,482.27,214.38,0.00,0.02,0.00,0.007,,0.00,0.00,,,,,0.00,0.00,1.06,0.00,,0.02,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_3.d" ,"5" ,1.228,1.393,1.506,587.30,309.06,0.00,0.03,0.00,0.009,,0.00,0.00,,,,,0.00,0.00,1.18,0.00,,0.03,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_3.d" ,"6" ,3.576,3.665,4.607,1960932.06,15150021.85,100.00,100.00,99.98,1.030,,1110.96,45081.03,,,,,1110.95,45081.03,,1965825.00,,99.75,MM,,,,,M,,,,,,,,
+
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_4.d"," -ESI EIC(115.0031) Scan Frag=175.0V STD_4.d "
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_4.d" ,"Peak" ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_4.d" ,"1" ,0.810,0.845,0.875,966.77,1279.89,0.02,0.28,0.02,0.022,,0.00,0.00,,,,,30.75,0.00,1.16,1094.37,,0.05,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_4.d" ,"2" ,0.875,0.930,0.943,693.30,627.66,0.01,0.20,0.01,0.015,,0.00,0.00,,,,,0.00,0.00,2.44,1007.35,,0.04,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_4.d" ,"3" ,1.373,1.392,1.502,357.53,187.58,0.00,0.10,0.00,0.009,,0.00,0.00,,,,,0.00,0.00,1.18,0.00,,0.02,  ,248.9683,,,,,,,,,,,,
+"D:\Projects\Marchand\Data\Carothers\240313_hydrogel\STD_4.d" ,"4" ,3.554,3.964,4.667,349259.37,5854685.08,100.00,100.00,99.96,1.114,,833.35,4293.76,,,,,833.35,4293.75,,351366.75,,17.77,MM,,,,,M,,,,,,,,
+

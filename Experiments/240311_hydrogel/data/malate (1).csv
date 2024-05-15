@@ -1,0 +1,75 @@
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_day2_1.d, -ESI EIC(133.0136) Scan Frag=175.0V pyc_day2_1.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_day2_1.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_day2_1.d ,1,3.801,3.873,3.989,24140.93,85088.14,100,100,100,0.188,0.034,0,1892.85,0.959,3.801,4.377,10.984,0,0,1.22,24140.93,,,  ,171.0046,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_day2_2.d, -ESI EIC(133.0136) Scan Frag=175.0V pyc_day2_2.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_day2_2.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_day2_2.d ,1,3.564,3.858,3.918,44846.76,431592.95,100,100,100,0.354,0.224,0,1450.14,0.545,3.564,4.007,10.986,0,1539.1,0.1,46123.37,,,  ,,,,,M,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_day2_3.d, -ESI EIC(133.0136) Scan Frag=175.0V pyc_day2_3.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_day2_3.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_day2_3.d ,1,3.67,3.913,4.107,45382.35,422454.03,100,100,100,0.438,0.218,0,0,0.545,3.686,3.996,10.986,0,0,0.31,45382.35,,,  ,171.0046,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_day2_4.d, -ESI EIC(133.0136) Scan Frag=175.0V pyc_day2_4.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_day2_4.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_day2_4.d ,1,3.847,3.925,4.163,67024.54,602732.69,100,100,100,0.316,0.135,0,0,0.545,3.875,4.152,10.986,0,0,5.89,67024.54,,,  ,171.0046,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_neg_day2_1.d, -ESI EIC(133.0136) Scan Frag=175.0V pyc_neg_day2_1.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_neg_day2_1.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_neg_day2_1.d ,1,4.459,4.481,4.509,1455.33,2816.53,100,100,100,0.05,3.419,0,0,0.542,4.481,4.481,6.553,0,0,0.01,1455.33,,,  ,248.9676,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_neg_day2_2.d, -ESI EIC(133.0136) Scan Frag=175.0V pyc_neg_day2_2.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_neg_day2_2.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_neg_day2_2.d ,1,3.815,3.936,4.378,205816.73,2239305.05,100,100,100,0.563,0.193,325.27,414.98,0.557,3.815,4.418,4.651,325.27,414.98,2.26,206161.33,,,  ,171.0046,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_neg_day2_3.d, -ESI EIC(133.0136) Scan Frag=175.0V pyc_neg_day2_3.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_neg_day2_3.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_neg_day2_3.d ,1,3.852,3.947,4.257,255690.61,2559129.74,100,100,100,0.404,0.121,0,10562.57,0.556,3.852,4.423,4.489,150.15,10562.57,3.8,258263.31,,,  ,,,,,M,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_neg_day2_4.d, -ESI EIC(133.0136) Scan Frag=175.0V pyc_neg_day2_4.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_neg_day2_4.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\pyc_neg_day2_4.d ,1,3.866,3.949,4.265,125180.77,1140499.16,100,100,100,0.399,0.111,950.01,6820.62,0.558,3.866,4.304,10.999,292.49,6820.62,5.86,126833.28,,,  ,,,,,M,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_day2_1.d, -ESI EIC(133.0136) Scan Frag=175.0V sds_day2_1.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_day2_1.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_day2_1.d ,1,3.904,3.965,4.331,105110.09,1037302.52,100,100,100,0.427,0.131,0,0,0.547,3.888,4.347,10.999,0,0,6.43,105110.09,,,  ,171.0046,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_day2_2.d, -ESI EIC(133.0136) Scan Frag=175.0V sds_day2_2.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_day2_2.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_day2_2.d ,1,3.889,3.977,4.327,98036.78,1082742.94,100,100,100,0.437,0.14,0,2776.11,0.548,3.889,4.365,10.984,142.51,2776.11,5.44,98711.2,,,  ,,,,,M,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_day2_3.d, -ESI EIC(133.0136) Scan Frag=175.0V sds_day2_3.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_day2_3.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_day2_3.d ,1,3.876,3.981,4.341,58167.1,721833.15,100,100,100,0.465,0.149,0,0,0.546,3.892,4.324,10.155,0,0,4.37,58167.1,,,  ,171.0046,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_day2_4.d, -ESI EIC(133.0136) Scan Frag=175.0V sds_day2_4.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_day2_4.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_day2_4.d ,1,3.902,3.985,4.317,60524.47,689997.04,100,100,100,0.415,0.143,202.21,548.74,0.545,3.897,4.345,4.777,202.21,548.74,3.92,60795.85,,,  ,171.0046,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_neg_day2_1.d, -ESI EIC(133.0136) Scan Frag=175.0V sds_neg_day2_1.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_neg_day2_1.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_neg_day2_1.d ,1,3.869,3.946,4.294,168912.12,1596309.69,100,100,100,0.425,0.128,1649.51,519.24,0.545,3.869,4.296,4.866,207.39,519.24,5.58,169176.39,,,  ,171.0046,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_neg_day2_2.d, -ESI EIC(133.0136) Scan Frag=175.0V sds_neg_day2_2.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_neg_day2_2.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_neg_day2_2.d ,1,3.867,3.945,4.294,184814.69,1732683.85,100,100,100,0.427,0.124,1424.42,0,0.543,3.867,4.294,10.985,0,0,5.25,184814.69,,,  ,171.0046,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_neg_day2_3.d, -ESI EIC(133.0136) Scan Frag=175.0V sds_neg_day2_3.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_neg_day2_3.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_neg_day2_3.d ,1,3.873,3.951,4.267,139592.86,1431186.91,100,100,100,0.393,0.14,930.93,6957.71,0.544,3.873,4.311,5.519,258.38,6957.71,6.81,141172.31,,,  ,,,,,M,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_neg_day2_4.d, -ESI EIC(133.0136) Scan Frag=175.0V sds_neg_day2_4.d ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_neg_day2_4.d ,Peak ,Start,RT,End,Height,Area,Area %,Height %,Area Sum %,Width,FWHM,Start Y,End Y,B1 Start,B1 End,B2 Start,B2 End,Start BL Y,End BL Y,Symmetry,Max Y,SNR,Height % (Norm),Baseline,Base Peak,k',Label,Cpd,Type,Plates,Plates/M,Resolution,Saturated,Tailing factor,Flags (Tgt),RI
+D:\Projects\Marchand\Data\Carothers\240313_hydrogel\sds_neg_day2_4.d ,1,3.876,3.964,4.324,105484.84,1180129.48,100,100,100,0.449,0.141,804.88,1533.41,0.557,3.876,4.33,5.388,227.9,1533.41,6.5,105970.59,,,  ,,,,,M,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,Y = 3116110*X + 180994,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,- pathway,431592.95,422454.03,602732.69,,1037302.52,1082742.94,721833.15,689997.04,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,+ pathway,2239305.05,2559129.74,1140499.16,,1596309.69,1732683.85,1431186.91,1180129.48,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,0.080420444,0.077487646,0.1353414,,0.274800479,0.289382897,0.173562278,0.163345659,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,0.660538636,0.763174516,0.307917615,,0.454193109,0.497957341,0.401203074,0.320635497,,,,,,,,,,,,,,,,,,,,,,,,,,
