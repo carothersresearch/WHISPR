@@ -1,0 +1,9 @@
+﻿,1,2,3,4,5,6,7,8,9,10,11,12
+A,gel_2hr,gel_2hr,gel_2hr,gel_2hr,liq_2hr,liq_2hr,liq_2hr,,fdh_day1,fdh_day1,fdh_day1,fdh_day1
+B,gel_4hr,gel_4hr,gel_4hr,gel_4hr,liq_4hr,liq_4hr,liq_4hr,,gfp_day1,gfp_day1,gfp_day1,gfp_day1
+C,gel_6hr,gel_6hr,gel_6hr,gel_6hr,liq_6hr,liq_6hr,liq_6hr,,fdh_day2,fdh_day2,fdh_day2,fdh_day2
+D,gel_8hr,gel_8hr,gel_8hr,gel_8hr,liq_8hr,liq_8hr,liq_8hr,,gfp_day2,gfp_day2,gfp_day2,gfp_day2
+E,gel_24hr,gel_24hr,gel_24hr,gel_24hr,liq_24hr,liq_24hr,liq_24hr,,fdh_day3,fdh_day3,fdh_day3,fdh_day3
+F,gel_single_rxn_24hr,gel_single_rxn_24hr,gel_single_rxn_24hr,,liq_single_rxn_24hr,liq_single_rxn_24hr,liq_single_rxn_24hr,,gfp_day3,gfp_day3,gfp_day3,gfp_day3
+G,,,,,,,,,fdh_day4,fdh_day4,fdh_day4,fdh_day4
+H,,,,,,,,,gfp_day4,gfp_day4,gfp_day4,gfp_day4
